@@ -56,10 +56,10 @@ Map {
 // Mapbox Terrain global landcover //
 
 #landcover {
-  [class='wood'] { polygon-fill: @wood; }
+  [class='wood'] { polygon-fill: @scrub; }
   [class='scrub'] { polygon-fill: @scrub; }
-  [class='grass'] { polygon-fill: @grass; }
-  [class='crop'] { polygon-fill: @crop; }
+  [class='grass'] { polygon-fill: @scrub; }
+  [class='crop'] { polygon-fill: @scrub; }
   [class='snow'] { polygon-fill: @snow; }
   // fade out stronger classes at high zooms,
   // let more detailed OSM data take over a bit:
@@ -75,7 +75,7 @@ Map {
 
 // OSM landuse & landcover //
 
-#landuse {
+/*#landuse {
   // The ::cover attachments fade in and become solid, overriding
   // any underlying shaped in the #landcover layer.
   ::cover33 { opacity: 0.33; }
@@ -97,11 +97,11 @@ Map {
   ::cover[zoom>=12] {
     [class='rock'] { polygon-fill: @rock; }
   }
-}
+}*/
 
 // Hillshading //
 
-#hillshade {
+/*#hillshade {
   ::0[zoom<=13],
   ::1[zoom=14],
   ::2[zoom>=15][zoom<=16],
@@ -133,7 +133,7 @@ Map {
   ::2 { image-filters: agg-stack-blur(8,8); }
   ::3 { image-filters: agg-stack-blur(16,16); }
   ::4 { image-filters: agg-stack-blur(32,32); }
-}
+}*/
 
 // Water Features //
 
@@ -191,7 +191,7 @@ Map {
   }
   // States / Provices / Subregions
   [admin_level>=3] {
-    line-width: 0.4;
+    line-width: 1;
     //line-dasharray: 10,3,3,3;
     [zoom>=6] { line-width: 1; }
     [zoom>=8] { line-width: 2; }
