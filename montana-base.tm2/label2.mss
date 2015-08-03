@@ -32,13 +32,13 @@
 // We set up a default halo color for places so you can edit them all
 // at once or override each individually:
 @place_halo:        fadeout(#fff,80);
-@country_text:      #666;
+@country_text:      @land * 0.2;
 @country_halo:      @place_halo;
 @state_text:        #666;
 @state_halo:        @place_halo;
 @city_text:         #4a4032;
 @city_halo:         @place_halo;
-@town_text:         lighten(#534738,10);
+@town_text:         lighten(#4a4032,10);
 @town_halo:         @place_halo;
 @poi_text:          @poi_text;  
 @road_text:         #4a4032;
@@ -180,7 +180,6 @@
   text-halo-rasterizer: fast;
   text-wrap-width: 30;
   text-min-distance: 2;
-  text-transform: uppercase;
   [scalerank=1] {
     [zoom=2]  { text-size: 12; text-wrap-width: 60; }
     [zoom=3]  { text-size: 13; text-wrap-width: 60; }
@@ -226,9 +225,10 @@
 
 // States ______________________________________________________________
 
-#state_label {
+#state_label[zoom>=4][zoom<=10] {
   text-name: @name;
   text-face-name: @darley;
+  //text-face-name: @sans_lt;
   text-placement: point;
   text-fill: @state_text;
   text-halo-fill: fadeout(@land,80);
@@ -236,8 +236,254 @@
   text-halo-rasterizer: fast;
   text-min-distance: 1;
   text-size: 10;
-  text-transform: uppercase;
+  [zoom>=5][zoom<=6] {
+    [area>10000] { text-size: 12; }
+    [area>50000] { text-size: 14; }
+    text-wrap-width: 40;
   }
+  [zoom>=7][zoom<=8] {
+    text-size: 14;
+    [area>50000] { text-size: 16; text-character-spacing: 1; }
+    [area>100000] { text-size: 18; text-character-spacing: 3; }
+    text-wrap-width: 60;
+  }
+  [zoom>=9][zoom<=10] {
+    text-halo-radius: 2;
+    text-size: 16;
+    text-character-spacing: 2;
+    [area>50000] { text-size: 18; text-character-spacing: 2; }
+    text-wrap-width: 100;
+  }
+}
+
+// Cities ______________________________________________________________
+
+// City labels with dots for low zoom levels.
+#place_label::citydots[type='city'][zoom>=4][zoom<=7][localrank<=3] {
+  // explicitly defining all the `ldir` values we're going
+  // to use shaves a bit off the final project.xml size
+  [ldir='N'],[ldir='S'],[ldir='E'],[ldir='W'],
+  [ldir='NE'],[ldir='SE'],[ldir='SW'],[ldir='NW'] {
+    shield-file: url("img/dot-small.png");
+    shield-unlock-image: true;
+    shield-name: @name;
+    shield-face-name: @riddiford;
+    //shield-face-name: @sans;
+    shield-placement: point;
+    shield-fill: @city_text;
+    shield-halo-fill: @city_halo;
+    shield-halo-radius: 2;
+    shield-halo-rasterizer: fast;
+    shield-min-distance: 2;
+    shield-size: 11;
+    [scalerank>=0][scalerank<=1] {
+      [zoom=5] { shield-size: 13; }
+      [zoom>=6] { shield-size: 14; }
+    }
+    [scalerank>=2][scalerank<=3] {
+      [zoom=5] { shield-size: 11; }
+      [zoom=6] { shield-size: 12; }
+      [zoom=7] { shield-size: 13; }
+    }
+    [scalerank>=4][scalerank<=5] {
+      [zoom=6] { shield-size: 11; }
+      [zoom=7] { shield-size: 12; }
+    }
+    [ldir='E'] { shield-text-dx: 4; }
+    [ldir='W'] { shield-text-dx: -4; }
+    [ldir='N'] { shield-text-dy: -4; }
+    [ldir='S'] { shield-text-dy: 4; }
+    [ldir='NE'] { shield-text-dx: 3; shield-text-dy: -3; }
+    [ldir='SE'] { shield-text-dx: 3; shield-text-dy: 3; }
+    [ldir='SW'] { shield-text-dx: -3; shield-text-dy: 3; }
+    [ldir='NW'] { shield-text-dx: -3; shield-text-dy: -3; }
+  }
+}
+
+// For medium to high zoom levels we do away with the dot
+// and center place labels on their point location.
+#place_label[type='city'][zoom>=8][zoom<=15][localrank<=3] {
+  text-name: @name;
+  text-face-name: @riddiford;
+  //text-face-name: @sans;
+  text-placement: point;
+  text-fill: @city_text;
+  text-halo-fill: @city_halo;
+  text-halo-radius: 2;
+  text-halo-rasterizer: fast;
+  text-wrap-width: 40;
+  text-min-distance: 5;
+  text-line-spacing: -4;
+  [zoom>=12] { text-halo-radius: 3; }
+  // We keep the scalerank filters the same for each zoom level.
+  // This is slightly inefficient-looking CartoCSS, but it saves
+  // some space in the project.xml
+  [zoom=8] {
+    text-size: 13;
+    text-wrap-width: 60;
+    [scalerank>=0][scalerank<=1] { text-size: 18; }
+    [scalerank>=2][scalerank<=3] { text-size: 16; }
+    [scalerank>=4][scalerank<=5] { text-size: 15; }
+    [scalerank>=6] { text-size: 13; }
+  }
+  [zoom=9] {
+    text-size: 14;
+    text-wrap-width: 60;
+    [scalerank>=0][scalerank<=1] { text-size: 19; }
+    [scalerank>=2][scalerank<=3] { text-size: 17; }
+    [scalerank>=4][scalerank<=5] { text-size: 16; }
+    [scalerank>=6] { text-size: 14; }
+  }
+  [zoom=10] {
+    text-size: 15;
+    text-wrap-width: 70;
+    [scalerank>=0][scalerank<=1] { text-size: 20; }
+    [scalerank>=2][scalerank<=3] { text-size: 19; }
+    [scalerank>=4][scalerank<=5] { text-size: 17; }
+    [scalerank>=6] { text-size: 15; }
+  }
+  [zoom=11] {
+    text-size: 16;
+    text-wrap-width: 80;
+    [scalerank>=0][scalerank<=1] { text-size: 20; }
+    [scalerank>=2][scalerank<=3] { text-size: 19; }
+    [scalerank>=4][scalerank<=5] { text-size: 17; }
+    [scalerank>=6] { text-size: 16; }
+  }
+  [zoom=12] {
+    text-size: 17;
+    text-wrap-width: 100;
+    [scalerank>=0][scalerank<=1] { text-size: 20; }
+    [scalerank>=2][scalerank<=3] { text-size: 19; }
+    [scalerank>=4][scalerank<=5] { text-size: 18; }
+    [scalerank>=6] { text-size: 17; }
+  }
+  [zoom=13] {
+    text-size: 18;
+    text-wrap-width: 200;
+    [scalerank>=0][scalerank<=1] { text-size: 20; }
+    [scalerank>=2][scalerank<=3] { text-size: 19; }
+    [scalerank>=4][scalerank<=5] { text-size: 19; }
+    [scalerank>=6] { text-size: 17; }
+  }
+  [zoom=14] {
+    text-fill: lighten(@city_text,10);
+    text-size: 19;
+    text-wrap-width: 300;
+    [scalerank>=0][scalerank<=1] { text-size: 20; }
+    [scalerank>=2][scalerank<=3] { text-size: 20; }
+    [scalerank>=4][scalerank<=5] { text-size: 19; }
+    [scalerank>=6] { text-size: 18; }
+  }
+  [zoom=15] {
+    text-fill: lighten(@city_text,10);
+    text-size: 20;
+    text-wrap-width: 400;
+    [scalerank>=0][scalerank<=1] { text-size: 20; }
+    [scalerank>=2][scalerank<=3] { text-size: 20; }
+    [scalerank>=4][scalerank<=5] { text-size: 20; }
+    [scalerank>=6] { text-size: 19; }
+  }
+}
+
+// Towns _______________________________________________________________
+
+#place_label[type='town'][zoom>=8][zoom<=17] {
+  text-name: @name;
+  text-face-name: @riddiford;
+  //text-face-name: @sans_lt;
+  text-placement: point;
+  text-fill: @town_text;
+  text-halo-fill: @town_halo;
+  text-halo-radius: 2;
+  text-halo-rasterizer: fast;
+  text-wrap-width: 60;
+  text-wrap-before: true;
+  text-line-spacing: -4;
+  text-min-distance: 15;
+  [zoom>=13] { text-min-distance: 4; }
+  text-size: 12;
+  [zoom>=11] { text-size: 14; text-min-distance: 18; }
+  [zoom>=12] { text-size: 15; text-wrap-width: 80; }
+  [zoom>=13] { text-size: 16; text-wrap-width: 120; }
+  [zoom>=14] { text-size: 18; text-wrap-width: 160; text-halo-radius: 3; }
+  [zoom>=15] { text-size: 20; text-wrap-width: 200; }
+  [zoom>=16] { text-size: 22; text-wrap-width: 240; }
+}
+
+// Villages ____________________________________________________________
+
+#place_label[type='village'][zoom>=10][zoom<=17] {
+  text-name: @name;
+  text-face-name: @riddiford;
+  //text-face-name: @sans;
+  text-placement: point;
+  text-fill: @town_text;
+  text-size: 11;
+  text-halo-fill: @town_halo;
+  text-halo-radius: 2;
+  text-halo-rasterizer: fast;
+  text-wrap-width: 60;
+  text-wrap-before: true;
+  text-min-distance: 40;
+  text-line-spacing: -4;
+  [zoom>=12] { text-size: 12; }
+  [zoom>=13] { text-wrap-width: 80; }
+  [zoom>=14] { text-size: 14; text-wrap-width: 100; }
+  [zoom>=15] { text-size: 16; text-wrap-width: 120; }
+  [zoom>=16] { text-size: 18; text-wrap-width: 160; }
+  [zoom=17] { text-size: 20; text-wrap-width: 200; }
+}
+
+// Suburbs _____________________________________________________________
+
+#place_label[type='suburb'][zoom>=12][zoom<=17] {
+  text-name: @name;
+  text-face-name: @riddiford;
+  //text-face-name: @sans_lt;
+  text-placement: point;
+  text-fill: @other_text;
+  text-size: 11;
+  text-halo-fill: @other_halo;
+  text-halo-radius: 1.5;
+  text-halo-rasterizer: fast;
+  text-wrap-width: 60;
+  text-wrap-before: true;
+  text-min-distance: 4;
+  text-line-spacing: -2;
+  [zoom=12] { text-min-distance: 30; }
+  [zoom>=13] { text-size: 12; text-min-distance: 20; }
+  [zoom>=14] { text-size: 13; text-wrap-width: 80; }
+  [zoom>=15] { text-size: 14; text-wrap-width: 120; }
+  [zoom>=16] { text-size: 16; text-wrap-width: 160; }
+  [zoom>=17] { text-size: 20; text-wrap-width: 200; }
+}
+
+// Neighbourhoods & Hamlets ____________________________________________
+
+#place_label[zoom>=13][zoom<=18] {
+  [type='hamlet'],
+  [type='neighbourhood'] {
+    text-name: @name;
+    text-face-name: @riddiford;
+    //text-face-name: @sans_lt;
+    text-placement: point;
+    text-fill: @other_text;
+    text-size: 11;
+    text-halo-fill: @other_halo;
+    text-halo-radius: 1.5;
+    text-halo-rasterizer: fast;
+    text-wrap-width: 60;
+    text-wrap-before: true;
+    text-min-distance: 4;
+    text-line-spacing: -2;
+    [zoom>=14] { text-size: 12; text-wrap-width: 80; }
+    [zoom>=16] { text-size: 14; text-wrap-width: 100; }
+    [zoom>=17] { text-size: 16; text-wrap-width: 130; }
+    [zoom>=18] { text-size: 18; text-wrap-width: 160; }
+  }
+}
+
 
 // =====================================================================
 // WATER LABELS

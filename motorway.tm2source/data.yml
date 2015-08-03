@@ -1,0 +1,434 @@
+_prefs: 
+  disabled: []
+  inspector: false
+  mapid: jelder.889d1b6b
+  rev: s-1d124e36
+  saveCenter: true
+attribution: ''
+center: 
+  - -111.9287
+  - 46.2558
+  - 5
+description: ''
+Layer: 
+  - id: motorway
+    Datasource: 
+      file: /Development/data/OverpassTurboData/motorway.geojson
+      layer: OGRGeoJSON
+      type: ogr
+    description: ''
+    fields: 
+      "@id": String
+      "addr:city": String
+      "addr:country": String
+      "addr:postcode": String
+      alt_name: String
+      bicycle: String
+      bridge: String
+      cutting: String
+      embankment: String
+      FIXME: String
+      "FIXME:lanes": String
+      hgv: String
+      "hgv:national_network": String
+      highway: String
+      lanes: String
+      "lanes:backward": String
+      "lanes:forward": String
+      layer: String
+      lit: String
+      maxspeed: String
+      "maxspeed:hgv": String
+      "maxspeed:truck": String
+      motor_vehicle: String
+      name: String
+      "name:en": String
+      "name:fr": String
+      name_1: String
+      name_2: String
+      NHS: String
+      note: String
+      "odbl:note": String
+      old_railway_operator: String
+      old_ref: String
+      oneway: String
+      railway: String
+      ref: String
+      reg_name: String
+      sidewalk: String
+      source: String
+      "source:hgv:national_network": String
+      "source:maxspeed": String
+      source_ref: String
+      surface: String
+      "tiger:cfcc": String
+      "tiger:county": String
+      "tiger:name_base": String
+      "tiger:name_base_1": String
+      "tiger:name_base_2": String
+      "tiger:name_base_3": String
+      "tiger:name_direction_prefix": String
+      "tiger:name_direction_suffix_2": String
+      "tiger:name_type": String
+      "tiger:name_type_1": String
+      "tiger:name_type_2": String
+      "tiger:reviewed": String
+      "tiger:separated": String
+      "tiger:source": String
+      "tiger:tlid": String
+      "tiger:upload_uuid": String
+      "tiger:zip_left": String
+      "tiger:zip_left_1": String
+      "tiger:zip_right": String
+      tunnel: String
+      "turn:lanes": String
+      unsigned_ref: String
+      wydot_ml_number: String
+    properties: 
+      "buffer-size": 8
+    srs: +proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs
+  - id: TrunkPrimary
+    Datasource: 
+      file: /Development/data/OverpassTurboData/TrunkPrimary.geojson
+      layer: OGRGeoJSON
+      type: ogr
+    description: ''
+    fields: 
+      "@id": String
+      access: String
+      "access:conditional": String
+      "addr:country": String
+      "addr:county": String
+      "addr:housenumber": String
+      "addr:postcode": String
+      "addr:state": String
+      admin_level: String
+      alt_name: String
+      "alt_name:en": String
+      area: String
+      attribution: String
+      bicycle: String
+      bridge: String
+      "change:lanes": String
+      "change:lanes:backward": String
+      "change:lanes:both_ways": String
+      "change:lanes:forward": String
+      construction: String
+      created_by: String
+      cutting: String
+      cycleway: String
+      designation: String
+      "destination:lanes": String
+      "destination:ref:lanes": String
+      ele: String
+      embankment: String
+      fixme: String
+      foot: String
+      footway: String
+      fut_name: String
+      fut_ref: String
+      "geobase:acquisitionTechnique": String
+      "geobase:datasetName": String
+      "geobase:roadsegmentid": String
+      "geobase:routeName1:en": String
+      "geobase:uuid": String
+      "gnis:county_id": String
+      "gnis:created": String
+      "gnis:feature_id": String
+      "gnis:state_id": String
+      hazmat: String
+      hgv: String
+      "hgv:national_network": String
+      highspeed: String
+      highway: String
+      history: String
+      horse: String
+      import: String
+      is_in: String
+      "is_in:county": String
+      junction: String
+      lanes: String
+      "lanes:backward": String
+      "lanes:both_ways": String
+      "lanes:forward": String
+      layer: String
+      lit: String
+      loc_name: String
+      maxspeed: String
+      "maxspeed:conditional": String
+      "maxspeed:hgv": String
+      "maxspeed:hgv:conditional": String
+      "maxspeed:night": String
+      "maxspeed:truck": String
+      "maxspeed:truck:night": String
+      mdt_base_route: String
+      motor_vehicle: String
+      motorcar: String
+      name: String
+      "name:en": String
+      "name:fr": String
+      name_1: String
+      name_2: String
+      name_3: String
+      nat_name: String
+      "nat_name:en": String
+      "nat_name:fr": String
+      "nfs:teton:OBJECTID": String
+      NHS: String
+      note: String
+      "note:lanes": String
+      "nps:route_desc": String
+      odbl: String
+      "odbl:note": String
+      old_name: String
+      old_railway_operator: String
+      old_ref: String
+      oneway: String
+      overtaking: String
+      railway: String
+      ref: String
+      reg_name: String
+      sidewalk: String
+      smoothness: String
+      source: String
+      "source:hgv:national_network": String
+      "source:name": String
+      "source:note": String
+      "source:ref": String
+      source_1: String
+      source_ref: String
+      surface: String
+      "tiger:cfcc": String
+      "tiger:county": String
+      "tiger:name_base": String
+      "tiger:name_base_1": String
+      "tiger:name_base_2": String
+      "tiger:name_base_3": String
+      "tiger:name_base_4": String
+      "tiger:name_direction_prefix": String
+      "tiger:name_direction_prefix_1": String
+      "tiger:name_direction_prefix_2": String
+      "tiger:name_direction_prefix_3": String
+      "tiger:name_direction_prefix_4": String
+      "tiger:name_direction_suffix": String
+      "tiger:name_direction_suffix_1": String
+      "tiger:name_direction_suffix_2": String
+      "tiger:name_direction_suffix_3": String
+      "tiger:name_direction_suffix_4": String
+      "tiger:name_type": String
+      "tiger:name_type_1": String
+      "tiger:name_type_2": String
+      "tiger:name_type_3": String
+      "tiger:name_type_4": String
+      "tiger:reviewed": String
+      "tiger:separated": String
+      "tiger:source": String
+      "tiger:tlid": String
+      "tiger:upload_uuid": String
+      "tiger:zip_left": String
+      "tiger:zip_left_1": String
+      "tiger:zip_left_2": String
+      "tiger:zip_right": String
+      "tiger:zip_right_1": String
+      "tiger:zip_right_2": String
+      toll: String
+      tunnel: String
+      "turn:lanes": String
+      "turn:lanes:backward": String
+      "turn:lanes:both_ways": String
+      "turn:lanes:forward": String
+      wikipedia: String
+      wydot_ml_number: String
+    properties: 
+      "buffer-size": 8
+    srs: +proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs
+  - id: Montana
+    Datasource: 
+      file: /Development/data/OSMRoads/Montana.shp
+      type: shape
+    description: ''
+    fields: 
+      bridge: Number
+      maxspeed: Number
+      name: String
+      oneway: Number
+      osm_id: String
+      ref: String
+      tunnel: Number
+      type: String
+    properties: 
+      "buffer-size": 8
+    srs: +proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs
+  - id: Alberta
+    Datasource: 
+      file: /Development/data/OSMRoads/Alberta.shp
+      type: shape
+    description: ''
+    fields: 
+      bridge: Number
+      maxspeed: Number
+      name: String
+      oneway: Number
+      osm_id: String
+      ref: String
+      tunnel: Number
+      type: String
+    properties: 
+      "buffer-size": 8
+    srs: +proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs
+  - id: BC
+    Datasource: 
+      file: /Development/data/OSMRoads/BC.shp
+      type: shape
+    description: ''
+    fields: 
+      bridge: Number
+      maxspeed: Number
+      name: String
+      oneway: Number
+      osm_id: String
+      ref: String
+      tunnel: Number
+      type: String
+    properties: 
+      "buffer-size": 8
+    srs: +proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs
+  - id: Idaho
+    Datasource: 
+      file: /Development/data/OSMRoads/Idaho.shp
+      type: shape
+    description: ''
+    fields: 
+      bridge: Number
+      maxspeed: Number
+      name: String
+      oneway: Number
+      osm_id: String
+      ref: String
+      tunnel: Number
+      type: String
+    properties: 
+      "buffer-size": 8
+    srs: +proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs
+  - id: NDakota
+    Datasource: 
+      file: /Development/data/OSMRoads/NDakota.shp
+      type: shape
+    description: ''
+    fields: 
+      bridge: Number
+      maxspeed: Number
+      name: String
+      oneway: Number
+      osm_id: String
+      ref: String
+      tunnel: Number
+      type: String
+    properties: 
+      "buffer-size": 8
+    srs: +proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs
+  - id: Nevada
+    Datasource: 
+      file: /Development/data/OSMRoads/Nevada.shp
+      type: shape
+    description: ''
+    fields: 
+      bridge: Number
+      maxspeed: Number
+      name: String
+      oneway: Number
+      osm_id: String
+      ref: String
+      tunnel: Number
+      type: String
+    properties: 
+      "buffer-size": 8
+    srs: +proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs
+  - id: Oregon
+    Datasource: 
+      file: /Development/data/OSMRoads/Oregon.shp
+      type: shape
+    description: ''
+    fields: 
+      bridge: Number
+      maxspeed: Number
+      name: String
+      oneway: Number
+      osm_id: String
+      ref: String
+      tunnel: Number
+      type: String
+    properties: 
+      "buffer-size": 8
+    srs: +proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs
+  - id: Saskatchewan
+    Datasource: 
+      file: /Development/data/OSMRoads/Saskatchewan.shp
+      type: shape
+    description: ''
+    fields: 
+      bridge: Number
+      maxspeed: Number
+      name: String
+      oneway: Number
+      osm_id: String
+      ref: String
+      tunnel: Number
+      type: String
+    properties: 
+      "buffer-size": 8
+    srs: +proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs
+  - id: SDakota
+    Datasource: 
+      file: /Development/data/OSMRoads/SDakota.shp
+      type: shape
+    description: ''
+    fields: 
+      bridge: Number
+      maxspeed: Number
+      name: String
+      oneway: Number
+      osm_id: String
+      ref: String
+      tunnel: Number
+      type: String
+    properties: 
+      "buffer-size": 8
+    srs: +proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs
+  - id: Washington
+    Datasource: 
+      file: /Development/data/OSMRoads/Washington.shp
+      type: shape
+    description: ''
+    fields: 
+      bridge: Number
+      maxspeed: Number
+      name: String
+      oneway: Number
+      osm_id: String
+      ref: String
+      tunnel: Number
+      type: String
+    properties: 
+      "buffer-size": 8
+    srs: +proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs
+  - id: Wyoming
+    Datasource: 
+      file: /Development/data/OSMRoads/Wyoming.shp
+      type: shape
+    description: ''
+    fields: 
+      bridge: Number
+      maxspeed: Number
+      name: String
+      oneway: Number
+      osm_id: String
+      ref: String
+      tunnel: Number
+      type: String
+    properties: 
+      "buffer-size": 8
+    srs: +proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs
+maxzoom: 12
+minzoom: 3
+name: motorway

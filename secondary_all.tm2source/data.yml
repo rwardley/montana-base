@@ -1,0 +1,35 @@
+_prefs: 
+  disabled: []
+  inspector: false
+  mapid: jelder.715b6f3c
+  rev: s-7f1de1eb
+  saveCenter: true
+attribution: ''
+center: 
+  - -116.2204
+  - 47.4678
+  - 6
+description: ''
+Layer: 
+  - id: Secondary_All
+    Datasource: 
+      file: /Development/data/OSMRoads/Secondary_All.shp
+      type: shape
+    description: ''
+    fields: 
+      bridge: Number
+      maxspeed: Number
+      name: String
+      OBJECTID: Number
+      oneway: Number
+      osm_id: String
+      ref: String
+      Shape_Leng: Number
+      tunnel: Number
+      type: String
+    properties: 
+      "buffer-size": 8
+    srs: +proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs
+maxzoom: 12
+minzoom: 6
+name: secondary_all

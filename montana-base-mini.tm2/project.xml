@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE Map[]>
-<Map srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over" background-color="#e4ddd3" font-directory="fonts/">
+<Map srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over" background-color="#d2e6b8" font-directory="fonts/">
 
 <Parameters>
   <Parameter name="attribution"><![CDATA[<a href='https://www.mapbox.com/about/maps/' target='_blank'>&copy; Mapbox &copy; OpenStreetMap</a> <a class='mapbox-improve-map' href='https://www.mapbox.com/map-feedback/' target='_blank'>Improve this map</a>]]></Parameter>
   <Parameter name="bounds">-180,-85.0511,180,85.0511</Parameter>
-  <Parameter name="center">-111.9891,46.3583,4</Parameter>
+  <Parameter name="center">-87.7148,47.1598,3</Parameter>
   <Parameter name="format">png8:m=h:c=128</Parameter>
   <Parameter name="maxzoom">4</Parameter>
   <Parameter name="minzoom">0</Parameter>
   <Parameter name="name"><![CDATA[Montana Mini]]></Parameter>
-  <Parameter name="source"><![CDATA[mapbox:///jelder.52c5850d,jelder.e279d651,mapbox.mapbox-terrain-v2,mapbox.mapbox-streets-v5]]></Parameter>
+  <Parameter name="source"><![CDATA[mapbox:///jelder.52c5850d,jelder.868eee1a,jelder.e279d651,mapbox.mapbox-terrain-v2,mapbox.mapbox-streets-v5]]></Parameter>
 </Parameters>
 
 <FontSet name="fontset-0">
@@ -33,85 +33,9 @@
   <Font face-name="Open Sans Regular"/>
   <Font face-name="Arial Unicode MS Regular"/>
 </FontSet>
-<Style name="landcover" filter-mode="first">
-  <Rule>
-    <MaxScaleDenominator>5000</MaxScaleDenominator>
-    <Filter>([class] = 'grass')</Filter>
-    <PolygonSymbolizer fill-opacity="0.2" fill="#d2e6b8" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>12500</MaxScaleDenominator>
-    <MinScaleDenominator>5000</MinScaleDenominator>
-    <Filter>([class] = 'grass')</Filter>
-    <PolygonSymbolizer fill-opacity="0.4" fill="#d2e6b8" />
-  </Rule>
-  <Rule>
-    <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([class] = 'grass')</Filter>
-    <PolygonSymbolizer fill="#d2e6b8" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>5000</MaxScaleDenominator>
-    <Filter>([class] = 'wood')</Filter>
-    <PolygonSymbolizer fill-opacity="0.2" fill="#d2e6b8" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>12500</MaxScaleDenominator>
-    <MinScaleDenominator>5000</MinScaleDenominator>
-    <Filter>([class] = 'wood')</Filter>
-    <PolygonSymbolizer fill-opacity="0.4" fill="#d2e6b8" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>25000</MaxScaleDenominator>
-    <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([class] = 'wood')</Filter>
-    <PolygonSymbolizer fill-opacity="0.6" fill="#d2e6b8" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>50000</MaxScaleDenominator>
-    <MinScaleDenominator>25000</MinScaleDenominator>
-    <Filter>([class] = 'wood')</Filter>
-    <PolygonSymbolizer fill-opacity="0.8" fill="#d2e6b8" />
-  </Rule>
-  <Rule>
-    <MinScaleDenominator>50000</MinScaleDenominator>
-    <Filter>([class] = 'wood')</Filter>
-    <PolygonSymbolizer fill="#d2e6b8" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>5000</MaxScaleDenominator>
-    <Filter>([class] = 'scrub')</Filter>
-    <PolygonSymbolizer fill-opacity="0.2" fill="#d2e6b8" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>12500</MaxScaleDenominator>
-    <MinScaleDenominator>5000</MinScaleDenominator>
-    <Filter>([class] = 'scrub')</Filter>
-    <PolygonSymbolizer fill-opacity="0.4" fill="#d2e6b8" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>25000</MaxScaleDenominator>
-    <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([class] = 'scrub')</Filter>
-    <PolygonSymbolizer fill-opacity="0.6" fill="#d2e6b8" />
-  </Rule>
-  <Rule>
-    <MinScaleDenominator>25000</MinScaleDenominator>
-    <Filter>([class] = 'scrub')</Filter>
-    <PolygonSymbolizer fill="#d2e6b8" />
-  </Rule>
-  <Rule>
-    <Filter>([class] = 'snow')</Filter>
-    <PolygonSymbolizer fill="#e8eefa" />
-  </Rule>
-  <Rule>
-    <Filter>([class] = 'crop')</Filter>
-    <PolygonSymbolizer fill="#d2e6b8" />
-  </Rule>
-</Style>
 <Layer name="landcover"
   srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
-    <StyleName>landcover</StyleName>  </Layer>
+      </Layer>
 
 <Layer name="landuse"
   srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
@@ -227,6 +151,15 @@
   srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
       </Layer>
 
+<Style name="Montana" filter-mode="first">
+  <Rule>
+    <PolygonSymbolizer fill="#b1c29c" />
+  </Rule>
+</Style>
+<Layer name="Montana"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+    <StyleName>Montana</StyleName>  </Layer>
+
 <Layer name="tunnel"
   srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
       </Layer>
@@ -260,7 +193,7 @@
   <Rule>
     <MinScaleDenominator>12500000</MinScaleDenominator>
     <Filter>([admin_level] &gt;= 3) and ([maritime] = 1)</Filter>
-    <LineSymbolizer stroke-width="1" stroke="#c1ccef" stroke-linejoin="round" />
+    <LineSymbolizer stroke-width="0.75" stroke="#c1ccef" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>200000</MaxScaleDenominator>
@@ -282,7 +215,7 @@
   <Rule>
     <MinScaleDenominator>12500000</MinScaleDenominator>
     <Filter>([admin_level] &gt;= 3)</Filter>
-    <LineSymbolizer stroke-width="1" stroke-linejoin="round" stroke="#a7b398" />
+    <LineSymbolizer stroke-width="0.75" stroke-linejoin="round" stroke="#a7b398" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>750000</MaxScaleDenominator>
@@ -1165,95 +1098,6 @@
 
 <Style name="state_label" filter-mode="first">
   <Rule>
-    <MaxScaleDenominator>1500000</MaxScaleDenominator>
-    <MinScaleDenominator>400000</MinScaleDenominator>
-    <Filter>([area] &gt; 100000)</Filter>
-    <TextSymbolizer size="18" character-spacing="2" halo-radius="2" wrap-width="100" face-name="NatGeo Darley Regular" placement="point" fill="#666666" halo-fill="rgba(228, 221, 211, 0.19999999999999996)" halo-rasterizer="fast" minimum-distance="1" text-transform="uppercase" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>6500000</MaxScaleDenominator>
-    <MinScaleDenominator>1500000</MinScaleDenominator>
-    <Filter>([area] &gt; 100000)</Filter>
-    <TextSymbolizer size="18" character-spacing="3" wrap-width="60" face-name="NatGeo Darley Regular" placement="point" fill="#666666" halo-fill="rgba(228, 221, 211, 0.19999999999999996)" halo-radius="2" halo-rasterizer="fast" minimum-distance="1" text-transform="uppercase" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>25000000</MaxScaleDenominator>
-    <MinScaleDenominator>6500000</MinScaleDenominator>
-    <Filter>([area] &gt; 100000)</Filter>
-    <TextSymbolizer size="14" wrap-width="40" face-name="NatGeo Darley Regular" placement="point" fill="#666666" halo-fill="rgba(228, 221, 211, 0.19999999999999996)" halo-radius="2" halo-rasterizer="fast" minimum-distance="1" text-transform="uppercase" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>50000000</MaxScaleDenominator>
-    <MinScaleDenominator>25000000</MinScaleDenominator>
-    <Filter>([area] &gt; 100000)</Filter>
-    <TextSymbolizer face-name="NatGeo Darley Regular" placement="point" fill="#666666" halo-fill="rgba(228, 221, 211, 0.19999999999999996)" halo-radius="2" halo-rasterizer="fast" minimum-distance="1" size="10" text-transform="uppercase" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>1500000</MaxScaleDenominator>
-    <MinScaleDenominator>400000</MinScaleDenominator>
-    <Filter>([area] &gt; 50000)</Filter>
-    <TextSymbolizer size="18" character-spacing="2" halo-radius="2" wrap-width="100" face-name="NatGeo Darley Regular" placement="point" fill="#666666" halo-fill="rgba(228, 221, 211, 0.19999999999999996)" halo-rasterizer="fast" minimum-distance="1" text-transform="uppercase" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>6500000</MaxScaleDenominator>
-    <MinScaleDenominator>1500000</MinScaleDenominator>
-    <Filter>([area] &gt; 50000)</Filter>
-    <TextSymbolizer size="16" character-spacing="1" wrap-width="60" face-name="NatGeo Darley Regular" placement="point" fill="#666666" halo-fill="rgba(228, 221, 211, 0.19999999999999996)" halo-radius="2" halo-rasterizer="fast" minimum-distance="1" text-transform="uppercase" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>25000000</MaxScaleDenominator>
-    <MinScaleDenominator>6500000</MinScaleDenominator>
-    <Filter>([area] &gt; 50000)</Filter>
-    <TextSymbolizer size="14" wrap-width="40" face-name="NatGeo Darley Regular" placement="point" fill="#666666" halo-fill="rgba(228, 221, 211, 0.19999999999999996)" halo-radius="2" halo-rasterizer="fast" minimum-distance="1" text-transform="uppercase" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>50000000</MaxScaleDenominator>
-    <MinScaleDenominator>25000000</MinScaleDenominator>
-    <Filter>([area] &gt; 50000)</Filter>
-    <TextSymbolizer face-name="NatGeo Darley Regular" placement="point" fill="#666666" halo-fill="rgba(228, 221, 211, 0.19999999999999996)" halo-radius="2" halo-rasterizer="fast" minimum-distance="1" size="10" text-transform="uppercase" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>25000000</MaxScaleDenominator>
-    <MinScaleDenominator>6500000</MinScaleDenominator>
-    <Filter>([area] &gt; 10000)</Filter>
-    <TextSymbolizer size="12" wrap-width="40" face-name="NatGeo Darley Regular" placement="point" fill="#666666" halo-fill="rgba(228, 221, 211, 0.19999999999999996)" halo-radius="2" halo-rasterizer="fast" minimum-distance="1" text-transform="uppercase" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>1500000</MaxScaleDenominator>
-    <MinScaleDenominator>400000</MinScaleDenominator>
-    <Filter>([area] &gt; 10000)</Filter>
-    <TextSymbolizer halo-radius="2" size="16" character-spacing="2" wrap-width="100" face-name="NatGeo Darley Regular" placement="point" fill="#666666" halo-fill="rgba(228, 221, 211, 0.19999999999999996)" halo-rasterizer="fast" minimum-distance="1" text-transform="uppercase" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>6500000</MaxScaleDenominator>
-    <MinScaleDenominator>1500000</MinScaleDenominator>
-    <Filter>([area] &gt; 10000)</Filter>
-    <TextSymbolizer size="14" wrap-width="60" face-name="NatGeo Darley Regular" placement="point" fill="#666666" halo-fill="rgba(228, 221, 211, 0.19999999999999996)" halo-radius="2" halo-rasterizer="fast" minimum-distance="1" text-transform="uppercase" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>50000000</MaxScaleDenominator>
-    <MinScaleDenominator>25000000</MinScaleDenominator>
-    <Filter>([area] &gt; 10000)</Filter>
-    <TextSymbolizer face-name="NatGeo Darley Regular" placement="point" fill="#666666" halo-fill="rgba(228, 221, 211, 0.19999999999999996)" halo-radius="2" halo-rasterizer="fast" minimum-distance="1" size="10" text-transform="uppercase" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>1500000</MaxScaleDenominator>
-    <MinScaleDenominator>400000</MinScaleDenominator>
-    <TextSymbolizer halo-radius="2" size="16" character-spacing="2" wrap-width="100" face-name="NatGeo Darley Regular" placement="point" fill="#666666" halo-fill="rgba(228, 221, 211, 0.19999999999999996)" halo-rasterizer="fast" minimum-distance="1" text-transform="uppercase" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>6500000</MaxScaleDenominator>
-    <MinScaleDenominator>1500000</MinScaleDenominator>
-    <TextSymbolizer size="14" wrap-width="60" face-name="NatGeo Darley Regular" placement="point" fill="#666666" halo-fill="rgba(228, 221, 211, 0.19999999999999996)" halo-radius="2" halo-rasterizer="fast" minimum-distance="1" text-transform="uppercase" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>25000000</MaxScaleDenominator>
-    <MinScaleDenominator>6500000</MinScaleDenominator>
-    <TextSymbolizer wrap-width="40" face-name="NatGeo Darley Regular" placement="point" fill="#666666" halo-fill="rgba(228, 221, 211, 0.19999999999999996)" halo-radius="2" halo-rasterizer="fast" minimum-distance="1" size="10" text-transform="uppercase" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>50000000</MaxScaleDenominator>
-    <MinScaleDenominator>25000000</MinScaleDenominator>
     <TextSymbolizer face-name="NatGeo Darley Regular" placement="point" fill="#666666" halo-fill="rgba(228, 221, 211, 0.19999999999999996)" halo-radius="2" halo-rasterizer="fast" minimum-distance="1" size="10" text-transform="uppercase" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
 </Style>
@@ -1267,13 +1111,13 @@
 
 <Style name="water_label" filter-mode="first">
   <Rule>
-    <MaxScaleDenominator>5000</MaxScaleDenominator>
-    <MinScaleDenominator>2500</MinScaleDenominator>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([area] &gt; 3200000)</Filter>
     <TextSymbolizer size="18" wrap-width="150" halo-radius="2" halo-rasterizer="fast" wrap-before="true" halo-fill="rgba(255, 255, 255, 0.19999999999999996)" line-spacing="-2" fontset-name="fontset-1" fill="#185869" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
-    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([area] &gt; 3200000)</Filter>
     <TextSymbolizer size="18" wrap-width="150" halo-radius="2" halo-rasterizer="fast" wrap-before="true" halo-fill="rgba(255, 255, 255, 0.19999999999999996)" line-spacing="-2" fontset-name="fontset-1" fill="#185869" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
@@ -1452,82 +1296,6 @@
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([class] = 'main') and ([reflen] &gt;= 1) and ([reflen] &lt;= 6)</Filter>
-    <ShieldSymbolizer spacing="400" size="11" file="img/shield/motorway_sm_[reflen].png" minimum-distance="80" fontset-name="fontset-3" fill="#ffffff" avoid-edges="true" minimum-padding="10" ><![CDATA[[ref]]]></ShieldSymbolizer>
-    <TextSymbolizer size="18" avoid-edges="true" placement="line" fontset-name="fontset-4" fill="#4a4032" halo-fill="rgba(228, 221, 211, 0.15000000000000002)" halo-radius="2" halo-rasterizer="fast" minimum-distance="200" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>5000</MaxScaleDenominator>
-    <MinScaleDenominator>2500</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([class] = 'main') and ([reflen] &gt;= 1) and ([reflen] &lt;= 6)</Filter>
-    <ShieldSymbolizer spacing="400" size="11" file="img/shield/motorway_sm_[reflen].png" minimum-distance="80" fontset-name="fontset-3" fill="#ffffff" avoid-edges="true" minimum-padding="10" ><![CDATA[[ref]]]></ShieldSymbolizer>
-    <TextSymbolizer size="16" avoid-edges="true" placement="line" fontset-name="fontset-4" fill="#4a4032" halo-fill="rgba(228, 221, 211, 0.15000000000000002)" halo-radius="2" halo-rasterizer="fast" minimum-distance="200" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>12500</MaxScaleDenominator>
-    <MinScaleDenominator>5000</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([class] = 'main') and ([reflen] &gt;= 1) and ([reflen] &lt;= 6)</Filter>
-    <ShieldSymbolizer spacing="400" size="11" file="img/shield/motorway_sm_[reflen].png" minimum-distance="80" fontset-name="fontset-3" fill="#ffffff" avoid-edges="true" minimum-padding="10" ><![CDATA[[ref]]]></ShieldSymbolizer>
-    <TextSymbolizer size="14" avoid-edges="true" placement="line" fontset-name="fontset-4" fill="#4a4032" halo-fill="rgba(228, 221, 211, 0.15000000000000002)" halo-radius="2" halo-rasterizer="fast" minimum-distance="200" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>25000</MaxScaleDenominator>
-    <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([class] = 'main') and ([reflen] &gt;= 1) and ([reflen] &lt;= 6)</Filter>
-    <ShieldSymbolizer spacing="400" size="11" file="img/shield/motorway_sm_[reflen].png" minimum-distance="80" fontset-name="fontset-3" fill="#ffffff" avoid-edges="true" minimum-padding="10" ><![CDATA[[ref]]]></ShieldSymbolizer>
-    <TextSymbolizer size="12" avoid-edges="true" placement="line" fontset-name="fontset-4" fill="#4a4032" halo-fill="rgba(228, 221, 211, 0.15000000000000002)" halo-radius="2" halo-rasterizer="fast" minimum-distance="200" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>50000</MaxScaleDenominator>
-    <MinScaleDenominator>25000</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([class] = 'main') and ([reflen] &gt;= 1) and ([reflen] &lt;= 6)</Filter>
-    <ShieldSymbolizer minimum-distance="80" file="img/shield/motorway_sm_[reflen].png" size="9" fontset-name="fontset-3" fill="#ffffff" spacing="300" avoid-edges="true" minimum-padding="10" ><![CDATA[[ref]]]></ShieldSymbolizer>
-    <TextSymbolizer size="12" avoid-edges="true" placement="line" fontset-name="fontset-4" fill="#4a4032" halo-fill="rgba(228, 221, 211, 0.15000000000000002)" halo-radius="2" halo-rasterizer="fast" minimum-distance="200" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>200000</MaxScaleDenominator>
-    <MinScaleDenominator>50000</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([class] = 'main') and ([reflen] &gt;= 1) and ([reflen] &lt;= 6)</Filter>
-    <ShieldSymbolizer minimum-distance="80" file="img/shield/motorway_sm_[reflen].png" size="9" fontset-name="fontset-3" fill="#ffffff" spacing="300" avoid-edges="true" minimum-padding="10" ><![CDATA[[ref]]]></ShieldSymbolizer>
-    <TextSymbolizer avoid-edges="true" placement="line" fontset-name="fontset-4" fill="#4a4032" size="11" halo-fill="rgba(228, 221, 211, 0.15000000000000002)" halo-radius="2" halo-rasterizer="fast" minimum-distance="200" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>3000000</MaxScaleDenominator>
-    <MinScaleDenominator>200000</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([class] = 'main') and ([reflen] &gt;= 1) and ([reflen] &lt;= 6)</Filter>
-    <ShieldSymbolizer file="img/shield/motorway_sm_[reflen].png" size="9" fontset-name="fontset-3" fill="#ffffff" spacing="300" avoid-edges="true" minimum-padding="10" minimum-distance="40" ><![CDATA[[ref]]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([class] = 'main')</Filter>
-    <TextSymbolizer size="18" avoid-edges="true" placement="line" fontset-name="fontset-4" fill="#4a4032" halo-fill="rgba(228, 221, 211, 0.15000000000000002)" halo-radius="2" halo-rasterizer="fast" minimum-distance="200" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>5000</MaxScaleDenominator>
-    <MinScaleDenominator>2500</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([class] = 'main')</Filter>
-    <TextSymbolizer size="16" avoid-edges="true" placement="line" fontset-name="fontset-4" fill="#4a4032" halo-fill="rgba(228, 221, 211, 0.15000000000000002)" halo-radius="2" halo-rasterizer="fast" minimum-distance="200" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>12500</MaxScaleDenominator>
-    <MinScaleDenominator>5000</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([class] = 'main')</Filter>
-    <TextSymbolizer size="14" avoid-edges="true" placement="line" fontset-name="fontset-4" fill="#4a4032" halo-fill="rgba(228, 221, 211, 0.15000000000000002)" halo-radius="2" halo-rasterizer="fast" minimum-distance="200" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>50000</MaxScaleDenominator>
-    <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([class] = 'main')</Filter>
-    <TextSymbolizer size="12" avoid-edges="true" placement="line" fontset-name="fontset-4" fill="#4a4032" halo-fill="rgba(228, 221, 211, 0.15000000000000002)" halo-radius="2" halo-rasterizer="fast" minimum-distance="200" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>200000</MaxScaleDenominator>
-    <MinScaleDenominator>50000</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([class] = 'main')</Filter>
-    <TextSymbolizer avoid-edges="true" placement="line" fontset-name="fontset-4" fill="#4a4032" size="11" halo-fill="rgba(228, 221, 211, 0.15000000000000002)" halo-radius="2" halo-rasterizer="fast" minimum-distance="200" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([mapnik::geometry_type] = 2) and ([class] = 'motorway') and ([reflen] &gt;= 1) and ([reflen] &lt;= 6)</Filter>
     <ShieldSymbolizer spacing="400" size="11" file="img/shield/motorway_sm_[reflen].png" minimum-distance="80" fontset-name="fontset-3" fill="#ffffff" avoid-edges="true" minimum-padding="10" ><![CDATA[[ref]]]></ShieldSymbolizer>
     <TextSymbolizer size="18" avoid-edges="true" placement="line" fontset-name="fontset-4" fill="#4a4032" halo-fill="rgba(228, 221, 211, 0.15000000000000002)" halo-radius="2" halo-rasterizer="fast" minimum-distance="200" ><![CDATA[[name]]]></TextSymbolizer>
@@ -1600,6 +1368,82 @@
     <MaxScaleDenominator>200000</MaxScaleDenominator>
     <MinScaleDenominator>50000</MinScaleDenominator>
     <Filter>([mapnik::geometry_type] = 2) and ([class] = 'motorway')</Filter>
+    <TextSymbolizer avoid-edges="true" placement="line" fontset-name="fontset-4" fill="#4a4032" size="11" halo-fill="rgba(228, 221, 211, 0.15000000000000002)" halo-radius="2" halo-rasterizer="fast" minimum-distance="200" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 2) and ([class] = 'main') and ([reflen] &gt;= 1) and ([reflen] &lt;= 6)</Filter>
+    <ShieldSymbolizer spacing="400" size="11" file="img/shield/motorway_sm_[reflen].png" minimum-distance="80" fontset-name="fontset-3" fill="#ffffff" avoid-edges="true" minimum-padding="10" ><![CDATA[[ref]]]></ShieldSymbolizer>
+    <TextSymbolizer size="18" avoid-edges="true" placement="line" fontset-name="fontset-4" fill="#4a4032" halo-fill="rgba(228, 221, 211, 0.15000000000000002)" halo-radius="2" halo-rasterizer="fast" minimum-distance="200" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <MinScaleDenominator>2500</MinScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 2) and ([class] = 'main') and ([reflen] &gt;= 1) and ([reflen] &lt;= 6)</Filter>
+    <ShieldSymbolizer spacing="400" size="11" file="img/shield/motorway_sm_[reflen].png" minimum-distance="80" fontset-name="fontset-3" fill="#ffffff" avoid-edges="true" minimum-padding="10" ><![CDATA[[ref]]]></ShieldSymbolizer>
+    <TextSymbolizer size="16" avoid-edges="true" placement="line" fontset-name="fontset-4" fill="#4a4032" halo-fill="rgba(228, 221, 211, 0.15000000000000002)" halo-radius="2" halo-rasterizer="fast" minimum-distance="200" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <MinScaleDenominator>5000</MinScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 2) and ([class] = 'main') and ([reflen] &gt;= 1) and ([reflen] &lt;= 6)</Filter>
+    <ShieldSymbolizer spacing="400" size="11" file="img/shield/motorway_sm_[reflen].png" minimum-distance="80" fontset-name="fontset-3" fill="#ffffff" avoid-edges="true" minimum-padding="10" ><![CDATA[[ref]]]></ShieldSymbolizer>
+    <TextSymbolizer size="14" avoid-edges="true" placement="line" fontset-name="fontset-4" fill="#4a4032" halo-fill="rgba(228, 221, 211, 0.15000000000000002)" halo-radius="2" halo-rasterizer="fast" minimum-distance="200" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000</MaxScaleDenominator>
+    <MinScaleDenominator>12500</MinScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 2) and ([class] = 'main') and ([reflen] &gt;= 1) and ([reflen] &lt;= 6)</Filter>
+    <ShieldSymbolizer spacing="400" size="11" file="img/shield/motorway_sm_[reflen].png" minimum-distance="80" fontset-name="fontset-3" fill="#ffffff" avoid-edges="true" minimum-padding="10" ><![CDATA[[ref]]]></ShieldSymbolizer>
+    <TextSymbolizer size="12" avoid-edges="true" placement="line" fontset-name="fontset-4" fill="#4a4032" halo-fill="rgba(228, 221, 211, 0.15000000000000002)" halo-radius="2" halo-rasterizer="fast" minimum-distance="200" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <MinScaleDenominator>25000</MinScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 2) and ([class] = 'main') and ([reflen] &gt;= 1) and ([reflen] &lt;= 6)</Filter>
+    <ShieldSymbolizer minimum-distance="80" file="img/shield/motorway_sm_[reflen].png" size="9" fontset-name="fontset-3" fill="#ffffff" spacing="300" avoid-edges="true" minimum-padding="10" ><![CDATA[[ref]]]></ShieldSymbolizer>
+    <TextSymbolizer size="12" avoid-edges="true" placement="line" fontset-name="fontset-4" fill="#4a4032" halo-fill="rgba(228, 221, 211, 0.15000000000000002)" halo-radius="2" halo-rasterizer="fast" minimum-distance="200" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 2) and ([class] = 'main') and ([reflen] &gt;= 1) and ([reflen] &lt;= 6)</Filter>
+    <ShieldSymbolizer minimum-distance="80" file="img/shield/motorway_sm_[reflen].png" size="9" fontset-name="fontset-3" fill="#ffffff" spacing="300" avoid-edges="true" minimum-padding="10" ><![CDATA[[ref]]]></ShieldSymbolizer>
+    <TextSymbolizer avoid-edges="true" placement="line" fontset-name="fontset-4" fill="#4a4032" size="11" halo-fill="rgba(228, 221, 211, 0.15000000000000002)" halo-radius="2" halo-rasterizer="fast" minimum-distance="200" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <MinScaleDenominator>200000</MinScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 2) and ([class] = 'main') and ([reflen] &gt;= 1) and ([reflen] &lt;= 6)</Filter>
+    <ShieldSymbolizer file="img/shield/motorway_sm_[reflen].png" size="9" fontset-name="fontset-3" fill="#ffffff" spacing="300" avoid-edges="true" minimum-padding="10" minimum-distance="40" ><![CDATA[[ref]]]></ShieldSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 2) and ([class] = 'main')</Filter>
+    <TextSymbolizer size="18" avoid-edges="true" placement="line" fontset-name="fontset-4" fill="#4a4032" halo-fill="rgba(228, 221, 211, 0.15000000000000002)" halo-radius="2" halo-rasterizer="fast" minimum-distance="200" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <MinScaleDenominator>2500</MinScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 2) and ([class] = 'main')</Filter>
+    <TextSymbolizer size="16" avoid-edges="true" placement="line" fontset-name="fontset-4" fill="#4a4032" halo-fill="rgba(228, 221, 211, 0.15000000000000002)" halo-radius="2" halo-rasterizer="fast" minimum-distance="200" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <MinScaleDenominator>5000</MinScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 2) and ([class] = 'main')</Filter>
+    <TextSymbolizer size="14" avoid-edges="true" placement="line" fontset-name="fontset-4" fill="#4a4032" halo-fill="rgba(228, 221, 211, 0.15000000000000002)" halo-radius="2" halo-rasterizer="fast" minimum-distance="200" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <MinScaleDenominator>12500</MinScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 2) and ([class] = 'main')</Filter>
+    <TextSymbolizer size="12" avoid-edges="true" placement="line" fontset-name="fontset-4" fill="#4a4032" halo-fill="rgba(228, 221, 211, 0.15000000000000002)" halo-radius="2" halo-rasterizer="fast" minimum-distance="200" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 2) and ([class] = 'main')</Filter>
     <TextSymbolizer avoid-edges="true" placement="line" fontset-name="fontset-4" fill="#4a4032" size="11" halo-fill="rgba(228, 221, 211, 0.15000000000000002)" halo-radius="2" halo-rasterizer="fast" minimum-distance="200" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>

@@ -1,108 +1,77 @@
-// Roads & Railways //
+@route: #1832bb;
 
-/*@case: #fff;
-
-//@motorway: #e8b0b0 * 0.9;
-//@main: #d8b8b0;
-@motorway: #d9aca3;
-@main: #e6b6ad;
-@street: #fff;
-
-#road,
-#tunnel,
-#bridge {
+#Yellowstone,
+#SpineOfRockies,
+#SmallGhostTowns,
+#MainStreet, 
+#LittleBighorn, 
+#Flathead,
+#BigSky,
+#BuffaloRoam {
   // This section just sets up the ordering of the attachments
-  ::mask { opacity: 1; }
   ::case { opacity: 1; }
   ::fill { opacity: 1; }
-  ::path { opacity: 1; }
 }
 
-#road,
-#tunnel,
-#bridge {
-[class='motorway']['mapnik::geometry_type'=2], {
-    ::case[zoom>=6] {
-      line-color: @case;
-      [zoom<=9] { line-color: @motorway; }
-      #road { line-cap: round; }
-      #tunnel { line-dasharray: 3,3; }
-      line-width: 2;
-      [zoom>= 8] { line-width: 2; }
-      [zoom>=10] { line-width: 2.8; }
-      [zoom>=11] { line-width: 3; }
-      [zoom>=12] { line-width: 4; }
-      [zoom>=13] { line-width: 5; }
-      [zoom>=14] { line-width: 6.5; }
-      [zoom>=15] { line-width: 9; }
-      [zoom>=16] { line-width: 12; }
-      [zoom>=17] { line-width: 15; }
-      [zoom>=18] { line-width: 17; }
-    }
-    ::fill[zoom>=10] {
-      line-color: @motorway;
-      line-cap: round;
-      #tunnel { line-color: mix(@motorway,@land,50); }
-      [zoom>=11] { line-width: 1.2; }
-      [zoom>=12] { line-width: 2; }
-      [zoom>=13] { line-width: 3; }
-      [zoom>=14] { line-width: 4; }
-      [zoom>=15] { line-width: 6; }
-      [zoom>=16] { line-width: 9; }
-      [zoom>=17] { line-width: 12; }
-      [zoom>=18] { line-width: 14; }
-    }
-   }
-   [class='motorway_link']['mapnik::geometry_type'=2], {
-    ::case {
-      line-color: @case;
-      #road { line-cap: round; }
-      #tunnel { line-dasharray: 3,3; }
-      [zoom>=12] { line-width: 2.8; }
-      [zoom>=14] { line-width: 3.5; }
-      [zoom>=16] { line-width: 5; }
-      [zoom>=18] { line-width: 6; }
-    }
-    ::fill[zoom>=10] {
-      line-color: @motorway;
-      line-cap: round;
-      #tunnel { line-color: mix(@motorway,@land,50); }
-      [zoom>=12] { line-width: 1.2; }
-      [zoom>=14] { line-width: 2; }
-      [zoom>=16] { line-width: 3; }
-      [zoom>=18] { line-width: 4; }
+#Yellowstone,
+#SpineOfRockies,
+#SmallGhostTowns,
+#MainStreet, 
+#LittleBighorn, 
+#Flathead,
+#BigSky,
+#BuffaloRoam {
+  ::fill {line-color: @route;
+  line-cap: round;
+  [zoom = 6] { line-width: 2.0; }
+  [zoom = 7] { line-width: 2.5; }
+  [zoom = 8] { line-width: 4; }
+  [zoom >= 9] { line-width: 5; }
     }
   }
-  [class='main']['mapnik::geometry_type'=2] {
-    ::case[zoom>=6] {
-      line-color: @case;
-      [zoom<=11] { line-color: @main; }
-      #road { line-cap: round; }
-      #tunnel { line-dasharray: 3,3; }
-      line-width: 1.5;
-      [zoom>=12] { line-width: 3; }
-      [zoom>=13] { line-width: 3.5; }
-      [zoom>=14] { line-width: 4; }
-      [zoom>=15] { line-width: 5.5; }
-      [zoom>=16] { line-width: 9; }
-      [zoom>=17] { line-width: 13; }
-      [zoom>=18] { line-width: 15; }
-    }
-    ::fill[zoom>=12] {
-      line-color: @main;
-      line-cap: round;
-      #tunnel { line-color: mix(@main,@land,50); }
-      [zoom>=12] { line-width: 1; }
-      [zoom>=13] { line-width: 1.5; }
-      [zoom>=14] { line-width: 2; }
-      [zoom>=15] { line-width: 3; }
-      [zoom>=16] { line-width: 6; }
-      [zoom>=17] { line-width: 10; }
-      [zoom>=18] { line-width: 12; }
-    }
-   }
- }
-#road,
+
+// Roads & Railways //
+
+@case: #fff;
+
+@motorway: #e8b0b0;
+@motorway2: #d9aca3;
+@main: #d8b8b0;
+@street: #fff;
+
+/*#road {
+  line-color: @motorway;
+  line-width: 3;
+  }
+*/
+
+#MotorwayAll {
+  line-color: @motorway2;
+  line-width: 1.5;
+  }
+
+#Yellowstone,
+#SpineOfRockies,
+#SmallGhostTowns,
+#MainStreet, 
+#LittleBighorn, 
+#Flathead,
+#BigSky,
+#BuffaloRoam {
+  line-color: @motorway2;
+  [zoom = 6] { line-width:0.75; }
+  [zoom >= 8] { line-width:1.25; }
+  line-cap: round;
+  }
+
+#Primary_All,
+#Secondary_All,
+#Trunk_All {
+  line-color: @motorway;
+  line-width: 0.75;
+  }
+
+/*#road,
 #tunnel,
 #bridge {
   // This section just sets up the ordering of the attachments
@@ -118,11 +87,11 @@
   [class='motorway']['mapnik::geometry_type'=2], {
     ::case[zoom>=6] {
       line-color: @case;
-      [zoom<=9] { line-color: @motorway; }
+      [zoom<=9] { line-color: @motorway2; }
       #road { line-cap: round; }
       #tunnel { line-dasharray: 3,3; }
-      line-width: 2;
-      [zoom>= 8] { line-width: 2; }
+      line-width: 0.6;
+      [zoom>= 8] { line-width: 0.8; }
       [zoom>=10] { line-width: 2.8; }
       [zoom>=11] { line-width: 3; }
       [zoom>=12] { line-width: 4; }
@@ -134,9 +103,9 @@
       [zoom>=18] { line-width: 17; }
     }
     ::fill[zoom>=10] {
-      line-color: @motorway;
+      line-color: @motorway2;
       line-cap: round;
-      #tunnel { line-color: mix(@motorway,@land,50); }
+      #tunnel { line-color: mix(@motorway2,@land,50); }
       [zoom>=11] { line-width: 1.2; }
       [zoom>=12] { line-width: 2; }
       [zoom>=13] { line-width: 3; }
@@ -158,9 +127,9 @@
       [zoom>=18] { line-width: 6; }
     }
     ::fill[zoom>=10] {
-      line-color: @motorway;
+      line-color: @motorway2;
       line-cap: round;
-      #tunnel { line-color: mix(@motorway,@land,50); }
+      #tunnel { line-color: mix(@motorway2,@land,50); }
       [zoom>=12] { line-width: 1.2; }
       [zoom>=14] { line-width: 2; }
       [zoom>=16] { line-width: 3; }
@@ -173,7 +142,7 @@
       [zoom<=11] { line-color: @main; }
       #road { line-cap: round; }
       #tunnel { line-dasharray: 3,3; }
-      line-width: 1.5;
+      line-width: 0.4;
       [zoom>=12] { line-width: 3; }
       [zoom>=13] { line-width: 3.5; }
       [zoom>=14] { line-width: 4; }
@@ -384,4 +353,5 @@
     [zoom>=18] { line-width: 1.2; }
   }
 }
+
 /**/

@@ -1,0 +1,35 @@
+_prefs: 
+  disabled: []
+  inspector: false
+  mapid: jelder.f1af8257
+  rev: s-0c45ad4b
+  saveCenter: true
+attribution: ''
+center: 
+  - -116.499
+  - 47.5172
+  - 6
+description: ''
+Layer: 
+  - id: Primary_All
+    Datasource: 
+      file: /Development/data/OSMRoads/Primary_All.shp
+      type: shape
+    description: ''
+    fields: 
+      bridge: Number
+      maxspeed: Number
+      name: String
+      OBJECTID: Number
+      oneway: Number
+      osm_id: String
+      ref: String
+      Shape_Leng: Number
+      tunnel: Number
+      type: String
+    properties: 
+      "buffer-size": 8
+    srs: +proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs
+maxzoom: 12
+minzoom: 6
+name: primary_all

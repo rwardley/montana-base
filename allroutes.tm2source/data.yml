@@ -1,0 +1,35 @@
+_prefs: 
+  disabled: []
+  inspector: false
+  mapid: jelder.323f6bf9
+  rev: s-dd8caa7d
+  saveCenter: true
+attribution: ''
+center: 
+  - -111.665
+  - 46.0122
+  - 6
+description: ''
+Layer: 
+  - id: MotorwayAll
+    Datasource: 
+      file: /Development/data/OSMRoads/MotorwayAll.shp
+      type: shape
+    description: ''
+    fields: 
+      bridge: Number
+      maxspeed: Number
+      name: String
+      OBJECTID: Number
+      oneway: Number
+      osm_id: String
+      ref: String
+      Shape_Leng: Number
+      tunnel: Number
+      type: String
+    properties: 
+      "buffer-size": 8
+    srs: +proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs
+maxzoom: 12
+minzoom: 6
+name: motorway_all

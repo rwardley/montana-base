@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE Map[]>
+<Map srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+
+<Parameters>
+  <Parameter name="center">-111.9287,46.2558,5</Parameter>
+  <Parameter name="format">pbf</Parameter>
+  <Parameter name="json"><![CDATA[{"vector_layers":[{"id":"motorway","description":"","fields":{"@id":"String","highway":"String","name":"String","oneway":"String","ref":"String","NHS":"String","lanes":"String","maxspeed":"String","bicycle":"String","hgv":"String","name_1":"String","tiger:cfcc":"String","tiger:county":"String","tiger:name_base":"String","tiger:name_base_1":"String","tiger:name_base_2":"String","tiger:name_type_1":"String","tiger:separated":"String","tiger:source":"String","tiger:tlid":"String","source":"String","maxspeed:hgv":"String","sidewalk":"String","bridge":"String","layer":"String","reg_name":"String","tiger:name_type_2":"String","tiger:reviewed":"String","tiger:upload_uuid":"String","old_ref":"String","source:maxspeed":"String","wydot_ml_number":"String","tiger:name_base_3":"String","surface":"String","hgv:national_network":"String","source:hgv:national_network":"String","tiger:name_type":"String","FIXME":"String","note":"String","alt_name":"String","tunnel":"String","embankment":"String","name_2":"String","tiger:zip_left":"String","tiger:zip_right":"String","cutting":"String","unsigned_ref":"String","odbl:note":"String","tiger:name_direction_prefix":"String","tiger:name_direction_suffix_2":"String","lit":"String","motor_vehicle":"String","lanes:backward":"String","lanes:forward":"String","maxspeed:truck":"String","addr:city":"String","addr:country":"String","addr:postcode":"String","source_ref":"String","old_railway_operator":"String","railway":"String","FIXME:lanes":"String","tiger:zip_left_1":"String","turn:lanes":"String","name:en":"String","name:fr":"String"}},{"id":"TrunkPrimary","description":"","fields":{"@id":"String","area":"String","highway":"String","NHS":"String","lanes":"String","maxspeed":"String","name":"String","ref":"String","source":"String","surface":"String","bridge":"String","layer":"String","oneway":"String","alt_name":"String","reg_name":"String","tiger:county":"String","mdt_base_route":"String","tiger:cfcc":"String","tiger:name_base":"String","tiger:name_base_1":"String","tiger:name_type":"String","addr:postcode":"String","name_1":"String","tiger:source":"String","tiger:tlid":"String","tiger:zip_left":"String","tiger:name_direction_prefix":"String","tiger:reviewed":"String","tiger:separated":"String","tiger:zip_left_1":"String","tiger:zip_right":"String","tiger:zip_right_1":"String","tiger:upload_uuid":"String","fixme":"String","tiger:name_direction_suffix":"String","gnis:county_id":"String","gnis:created":"String","gnis:feature_id":"String","gnis:state_id":"String","is_in":"String","ele":"String","hgv":"String","hgv:national_network":"String","tiger:name_base_2":"String","maxspeed:night":"String","maxspeed:truck":"String","maxspeed:truck:night":"String","tiger:name_base_3":"String","tiger:name_direction_prefix_1":"String","tiger:name_type_1":"String","old_ref":"String","tiger:name_direction_suffix_2":"String","tiger:name_direction_suffix_1":"String","tiger:name_base_4":"String","name_2":"String","name_3":"String","tiger:name_type_3":"String","tiger:name_type_2":"String","hazmat":"String","sidewalk":"String","note:lanes":"String","access":"String","cycleway":"String","motor_vehicle":"String","tiger:name_direction_prefix_2":"String","tiger:name_direction_prefix_3":"String","construction":"String","tiger:zip_left_2":"String","source_ref":"String","junction":"String","nat_name":"String","smoothness":"String","source:name":"String","source:hgv:national_network":"String","note":"String","old_railway_operator":"String","railway":"String","tiger:name_direction_prefix_4":"String","wydot_ml_number":"String","wikipedia":"String","bicycle":"String","foot":"String","tiger:name_direction_suffix_3":"String","tiger:name_direction_suffix_4":"String","lanes:backward":"String","lanes:forward":"String","fut_name":"String","addr:country":"String","addr:county":"String","addr:state":"String","tiger:name_type_4":"String","odbl":"String","odbl:note":"String","is_in:county":"String","loc_name":"String","tiger:zip_right_2":"String","attribution":"String","geobase:acquisitionTechnique":"String","created_by":"String","lit":"String","history":"String","geobase:datasetName":"String","geobase:uuid":"String","alt_name:en":"String","geobase:routeName1:en":"String","name:en":"String","nat_name:en":"String","nat_name:fr":"String","tunnel":"String","import":"String","nfs:teton:OBJECTID":"String","nps:route_desc":"String","admin_level":"String","motorcar":"String","change:lanes":"String","destination:ref:lanes":"String","overtaking":"String","turn:lanes":"String","source:note":"String","horse":"String","maxspeed:conditional":"String","maxspeed:hgv":"String","maxspeed:hgv:conditional":"String","change:lanes:backward":"String","change:lanes:both_ways":"String","change:lanes:forward":"String","footway":"String","lanes:both_ways":"String","turn:lanes:both_ways":"String","geobase:roadsegmentid":"String","toll":"String","name:fr":"String","source:ref":"String","source_1":"String","cutting":"String","destination:lanes":"String","access:conditional":"String","addr:housenumber":"String","highspeed":"String","designation":"String","embankment":"String","turn:lanes:backward":"String","turn:lanes:forward":"String","old_name":"String","fut_ref":"String"}},{"id":"Montana","description":"","fields":{"osm_id":"String","name":"String","ref":"String","type":"String","oneway":"Number","bridge":"Number","tunnel":"Number","maxspeed":"Number"}},{"id":"Alberta","description":"","fields":{"osm_id":"String","name":"String","ref":"String","type":"String","oneway":"Number","bridge":"Number","tunnel":"Number","maxspeed":"Number"}},{"id":"BC","description":"","fields":{"osm_id":"String","name":"String","ref":"String","type":"String","oneway":"Number","bridge":"Number","tunnel":"Number","maxspeed":"Number"}},{"id":"Idaho","description":"","fields":{"osm_id":"String","name":"String","ref":"String","type":"String","oneway":"Number","bridge":"Number","tunnel":"Number","maxspeed":"Number"}},{"id":"NDakota","description":"","fields":{"osm_id":"String","name":"String","ref":"String","type":"String","oneway":"Number","bridge":"Number","tunnel":"Number","maxspeed":"Number"}},{"id":"Nevada","description":"","fields":{"osm_id":"String","name":"String","ref":"String","type":"String","oneway":"Number","bridge":"Number","tunnel":"Number","maxspeed":"Number"}},{"id":"Oregon","description":"","fields":{"osm_id":"String","name":"String","ref":"String","type":"String","oneway":"Number","bridge":"Number","tunnel":"Number","maxspeed":"Number"}},{"id":"Saskatchewan","description":"","fields":{"osm_id":"String","name":"String","ref":"String","type":"String","oneway":"Number","bridge":"Number","tunnel":"Number","maxspeed":"Number"}},{"id":"SDakota","description":"","fields":{"osm_id":"String","name":"String","ref":"String","type":"String","oneway":"Number","bridge":"Number","tunnel":"Number","maxspeed":"Number"}},{"id":"Washington","description":"","fields":{"osm_id":"String","name":"String","ref":"String","type":"String","oneway":"Number","bridge":"Number","tunnel":"Number","maxspeed":"Number"}},{"id":"Wyoming","description":"","fields":{"osm_id":"String","name":"String","ref":"String","type":"String","oneway":"Number","bridge":"Number","tunnel":"Number","maxspeed":"Number"}}]}]]></Parameter>
+  <Parameter name="maxzoom">12</Parameter>
+  <Parameter name="minzoom">3</Parameter>
+  <Parameter name="name"><![CDATA[motorway]]></Parameter>
+</Parameters>
+
+
+<Layer name="motorway"
+  buffer-size="8"
+  srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs">
+    
+    <Datasource>
+       <Parameter name="file"><![CDATA[/Development/data/OverpassTurboData/motorway.geojson]]></Parameter>
+       <Parameter name="layer"><![CDATA[OGRGeoJSON]]></Parameter>
+       <Parameter name="type"><![CDATA[ogr]]></Parameter>
+    </Datasource>
+  </Layer>
+
+<Layer name="TrunkPrimary"
+  buffer-size="8"
+  srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs">
+    
+    <Datasource>
+       <Parameter name="file"><![CDATA[/Development/data/OverpassTurboData/TrunkPrimary.geojson]]></Parameter>
+       <Parameter name="layer"><![CDATA[OGRGeoJSON]]></Parameter>
+       <Parameter name="type"><![CDATA[ogr]]></Parameter>
+    </Datasource>
+  </Layer>
+
+<Layer name="Montana"
+  buffer-size="8"
+  srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs">
+    
+    <Datasource>
+       <Parameter name="file"><![CDATA[/Development/data/OSMRoads/Montana.shp]]></Parameter>
+       <Parameter name="type"><![CDATA[shape]]></Parameter>
+    </Datasource>
+  </Layer>
+
+<Layer name="Alberta"
+  buffer-size="8"
+  srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs">
+    
+    <Datasource>
+       <Parameter name="file"><![CDATA[/Development/data/OSMRoads/Alberta.shp]]></Parameter>
+       <Parameter name="type"><![CDATA[shape]]></Parameter>
+    </Datasource>
+  </Layer>
+
+<Layer name="BC"
+  buffer-size="8"
+  srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs">
+    
+    <Datasource>
+       <Parameter name="file"><![CDATA[/Development/data/OSMRoads/BC.shp]]></Parameter>
+       <Parameter name="type"><![CDATA[shape]]></Parameter>
+    </Datasource>
+  </Layer>
+
+<Layer name="Idaho"
+  buffer-size="8"
+  srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs">
+    
+    <Datasource>
+       <Parameter name="file"><![CDATA[/Development/data/OSMRoads/Idaho.shp]]></Parameter>
+       <Parameter name="type"><![CDATA[shape]]></Parameter>
+    </Datasource>
+  </Layer>
+
+<Layer name="NDakota"
+  buffer-size="8"
+  srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs">
+    
+    <Datasource>
+       <Parameter name="file"><![CDATA[/Development/data/OSMRoads/NDakota.shp]]></Parameter>
+       <Parameter name="type"><![CDATA[shape]]></Parameter>
+    </Datasource>
+  </Layer>
+
+<Layer name="Nevada"
+  buffer-size="8"
+  srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs">
+    
+    <Datasource>
+       <Parameter name="file"><![CDATA[/Development/data/OSMRoads/Nevada.shp]]></Parameter>
+       <Parameter name="type"><![CDATA[shape]]></Parameter>
+    </Datasource>
+  </Layer>
+
+<Layer name="Oregon"
+  buffer-size="8"
+  srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs">
+    
+    <Datasource>
+       <Parameter name="file"><![CDATA[/Development/data/OSMRoads/Oregon.shp]]></Parameter>
+       <Parameter name="type"><![CDATA[shape]]></Parameter>
+    </Datasource>
+  </Layer>
+
+<Layer name="Saskatchewan"
+  buffer-size="8"
+  srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs">
+    
+    <Datasource>
+       <Parameter name="file"><![CDATA[/Development/data/OSMRoads/Saskatchewan.shp]]></Parameter>
+       <Parameter name="type"><![CDATA[shape]]></Parameter>
+    </Datasource>
+  </Layer>
+
+<Layer name="SDakota"
+  buffer-size="8"
+  srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs">
+    
+    <Datasource>
+       <Parameter name="file"><![CDATA[/Development/data/OSMRoads/SDakota.shp]]></Parameter>
+       <Parameter name="type"><![CDATA[shape]]></Parameter>
+    </Datasource>
+  </Layer>
+
+<Layer name="Washington"
+  buffer-size="8"
+  srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs">
+    
+    <Datasource>
+       <Parameter name="file"><![CDATA[/Development/data/OSMRoads/Washington.shp]]></Parameter>
+       <Parameter name="type"><![CDATA[shape]]></Parameter>
+    </Datasource>
+  </Layer>
+
+<Layer name="Wyoming"
+  buffer-size="8"
+  srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs">
+    
+    <Datasource>
+       <Parameter name="file"><![CDATA[/Development/data/OSMRoads/Wyoming.shp]]></Parameter>
+       <Parameter name="type"><![CDATA[shape]]></Parameter>
+    </Datasource>
+  </Layer>
+
+</Map>

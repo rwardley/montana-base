@@ -1,6 +1,6 @@
 _prefs: 
   baselayer: ''
-  mapid: jelder.ca16fb3d
+  mapid: jelder.aa17fc8d
   print: true
   saveCenter: true
 _properties: {}
@@ -11,9 +11,9 @@ bounds:
   - 180
   - 85.0511
 center: 
-  - -111.9891
-  - 46.3583
-  - 4
+  - -87.7148
+  - 47.1598
+  - 3
 description: ''
 format: "png8:m=h:c=128"
 interactivity_layer: ''
@@ -28,6 +28,7 @@ layers:
   - barrier_line
   - building
   - landuse_overlay
+  - Montana
   - tunnel
   - road
   - bridge
@@ -54,7 +55,7 @@ layers:
 maxzoom: 4
 minzoom: 0
 name: Montana Mini
-source: "mapbox:///jelder.52c5850d,jelder.e279d651,mapbox.mapbox-terrain-v2,mapbox.mapbox-streets-v5"
+source: "mapbox:///jelder.52c5850d,jelder.868eee1a,jelder.e279d651,mapbox.mapbox-terrain-v2,mapbox.mapbox-streets-v5"
 styles: 
   - base.mss
   - label.mss

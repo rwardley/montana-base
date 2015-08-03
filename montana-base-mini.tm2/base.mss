@@ -7,7 +7,7 @@
 //@crop: #d7debf;
 //@grass: #d7debf;
 //@scrub: #cad7b5;
-//@wood: #c0d0ac;
+@wood: #b1c29c;
 @crop: #e3f2ce;
 //@crop: #daecc3;
 @grass: #daecc3;
@@ -49,13 +49,13 @@
 // Background //
 
 Map {
-  background-color: @land;
+  background-color: @scrub;
   font-directory: url("fonts/");
 }
 
 // Mapbox Terrain global landcover //
 
-#landcover {
+/*#landcover {
   [class='wood'] { polygon-fill: @scrub; }
   [class='scrub'] { polygon-fill: @scrub; }
   [class='grass'] { polygon-fill: @scrub; }
@@ -71,7 +71,7 @@ Map {
     [zoom>=16] { polygon-opacity: 0.4; }
     [zoom>=17] { polygon-opacity: 0.2; }
   }
-}
+}*/
 
 // OSM landuse & landcover //
 
@@ -191,10 +191,14 @@ Map {
   }
   // States / Provices / Subregions
   [admin_level>=3] {
-    line-width: 1;
+    line-width: 0.75;
     //line-dasharray: 10,3,3,3;
-    [zoom>=6] { line-width: 1; }
+        [zoom>=6] { line-width: 1; }
     [zoom>=8] { line-width: 2; }
     [zoom>=12] { line-width: 3; }
   }
 }
+
+#Montana {
+  polygon-fill: @wood;
+  }

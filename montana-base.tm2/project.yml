@@ -28,10 +28,28 @@ layers:
   - barrier_line
   - building
   - landuse_overlay
+  - admin
+  - BigSky
+  - BuffaloRoam
+  - Flathead
+  - LittleBighorn
+  - MainStreet
+  - SmallGhostTowns
+  - SpineOfRockies
+  - Yellowstone
   - tunnel
   - road
   - bridge
-  - admin
+  - motorway
+  - TrunkPrimary
+  - MotorwayAll
+  - Primary_All
+  - Secondary_All
+  - Trunk_All
+  - Bighorn_POI
+  - Flathead_POI
+  - Small_Towns_POI
+  - Main_Street_POI
   - country_label_line
   - country_label
   - marine_label
@@ -43,21 +61,15 @@ layers:
   - waterway_label
   - housenum_label
   - contour.label
-  - Flathead
-  - LittleBighorn
-  - MainStreet
-  - SmallGhostTowns
-  - Bighorn_POI
-  - Flathead_POI
-  - Small_Towns_POI
-  - Main_Street_POI
 maxzoom: 11
 minzoom: 4
 name: Montana Terrain
-source: "mapbox:///jelder.52c5850d,jelder.e279d651,mapbox.mapbox-terrain-v2,mapbox.mapbox-streets-v5"
+source: "mapbox:///jelder.52c5850d,jelder.2e047933,jelder.323f6bf9,jelder.f1af8257,jelder.715b6f3c,jelder.8931a9ae,mapbox.mapbox-terrain-v2,mapbox.mapbox-streets-v5"
 styles: 
   - base.mss
   - roads.mss
   - label.mss
   - points.mss
+  - roads2.mss
+  - label2.mss
 template: ''

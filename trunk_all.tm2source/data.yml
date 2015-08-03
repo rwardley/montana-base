@@ -1,0 +1,35 @@
+_prefs: 
+  disabled: []
+  inspector: false
+  mapid: jelder.8931a9ae
+  rev: s-d1de37da
+  saveCenter: true
+attribution: ''
+center: 
+  - -114.4336
+  - 47.6358
+  - 6
+description: ''
+Layer: 
+  - id: Trunk_All
+    Datasource: 
+      file: /Development/data/OSMRoads/Trunk_All.shp
+      type: shape
+    description: ''
+    fields: 
+      bridge: Number
+      maxspeed: Number
+      name: String
+      OBJECTID: Number
+      oneway: Number
+      osm_id: String
+      ref: String
+      Shape_Leng: Number
+      tunnel: Number
+      type: String
+    properties: 
+      "buffer-size": 8
+    srs: +proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs
+maxzoom: 12
+minzoom: 6
+name: trunk_all

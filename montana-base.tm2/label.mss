@@ -31,7 +31,7 @@
 
 // We set up a default halo color for places so you can edit them all
 // at once or override each individually:
-@place_halo:        fadeout(#fff,80);
+@place_halo:        fadeout(#fff,70);
 @country_text:      @land * 0.2;
 @country_halo:      @place_halo;
 @state_text:        #666;
@@ -57,7 +57,7 @@
 // OCEAN & MARINE LABELS
 // =====================================================================
 
-#marine_label {
+/*#marine_label {
   text-name: @name;
   text-face-name: @sans_lt_italic;
   text-fill: mix(@water_dark,@water,25);
@@ -229,14 +229,14 @@
 #state_label[zoom>=4][zoom<=10] {
   text-name: @name;
   /*text-face-name: @sans_lt;*/
-  text-face-name: @darley;
+  /*text-face-name: @darley;
   text-placement: point;
   text-fill: @state_text;
-  text-halo-fill: fadeout(@land,80);
-  text-halo-radius: 2;
+  text-halo-fill: fadeout(@land,65);
+  text-halo-radius: 2.5;
   text-halo-rasterizer: fast;
   text-min-distance: 1;
-  text-size: 10;
+  text-size: 11;
   text-transform: uppercase;
   [zoom>=5][zoom<=6] {
     [area>10000] { text-size: 12; }
@@ -261,7 +261,7 @@
 // Cities ______________________________________________________________
 
 // City labels with dots for low zoom levels.
-#place_label::citydots[type='city'][zoom>=4][zoom<=7][localrank<=3] {
+/*#place_label::citydots[type='city'][zoom>=4][zoom<=7][localrank<=3] {
   // explicitly defining all the `ldir` values we're going
   // to use shaves a bit off the final project.xml size
   [ldir='N'],[ldir='S'],[ldir='E'],[ldir='W'],
@@ -270,8 +270,9 @@
     shield-unlock-image: true;
     shield-name: @name;
     /*shield-face-name: @sans;*/
-    shield-face-name: @riddiford;
+    /*shield-face-name: @riddiford;
     shield-placement: point;
+    //shield-fill: blue;
     shield-fill: @city_text;
     shield-halo-fill: @city_halo;
     shield-halo-radius: 2;
@@ -279,17 +280,17 @@
     shield-min-distance: 2;
     shield-size: 12;
     [scalerank>=0][scalerank<=1] {
-      [zoom=5] { shield-size: 13; }
-      [zoom>=6] { shield-size: 14; }
+      [zoom=5] { shield-size: 14; }
+      [zoom>=6] { shield-size: 15; }
     }
     [scalerank>=2][scalerank<=3] {
-      [zoom=5] { shield-size: 11; }
-      [zoom=6] { shield-size: 12; }
-      [zoom=7] { shield-size: 13; }
+      [zoom=5] { shield-size: 13; }
+      [zoom=6] { shield-size: 14; }
+      [zoom=7] { shield-size: 15; }
     }
     [scalerank>=4][scalerank<=5] {
-      [zoom=6] { shield-size: 11; }
-      [zoom=7] { shield-size: 12; }
+      [zoom=6] { shield-size: 12; }
+      [zoom=7] { shield-size: 13; }
     }
     [ldir='E'] { shield-text-dx: 4; }
     [ldir='W'] { shield-text-dx: -4; }
@@ -304,12 +305,13 @@
 
 // For medium to high zoom levels we do away with the dot
 // and center place labels on their point location.
-#place_label[type='city'][zoom>=8][zoom<=15][localrank<=3] {
+/*#place_label[type='city'][zoom>=8][zoom<=15][localrank<=3] {
   text-name: @name;
   /*text-face-name: @sans;*/
-  text-face-name: @riddiford;
+  /*text-face-name: @riddiford;
   text-placement: point;
-  text-fill: @city_text;
+  text-fill: red;
+  //text-fill: @city_text;
   text-halo-fill: @city_halo;
   text-halo-radius: 2;
   text-halo-rasterizer: fast;
@@ -321,7 +323,7 @@
   // This is slightly inefficient-looking CartoCSS, but it saves
   // some space in the project.xml
   [zoom=8] {
-    text-size: 13;
+    text-size: 14;
     text-wrap-width: 60;
     [scalerank>=0][scalerank<=1] { text-size: 18; }
     [scalerank>=2][scalerank<=3] { text-size: 16; }
@@ -329,7 +331,7 @@
     [scalerank>=6] { text-size: 13; }
   }
   [zoom=9] {
-    text-size: 14;
+    text-size: 15;
     text-wrap-width: 60;
     [scalerank>=0][scalerank<=1] { text-size: 19; }
     [scalerank>=2][scalerank<=3] { text-size: 17; }
@@ -337,7 +339,7 @@
     [scalerank>=6] { text-size: 14; }
   }
   [zoom=10] {
-    text-size: 15;
+    text-size: 16;
     text-wrap-width: 70;
     [scalerank>=0][scalerank<=1] { text-size: 20; }
     [scalerank>=2][scalerank<=3] { text-size: 19; }
@@ -345,7 +347,7 @@
     [scalerank>=6] { text-size: 15; }
   }
   [zoom=11] {
-    text-size: 16;
+    text-size: 17;
     text-wrap-width: 80;
     [scalerank>=0][scalerank<=1] { text-size: 20; }
     [scalerank>=2][scalerank<=3] { text-size: 19; }
@@ -353,7 +355,7 @@
     [scalerank>=6] { text-size: 16; }
   }
   [zoom=12] {
-    text-size: 17;
+    text-size: 18;
     text-wrap-width: 100;
     [scalerank>=0][scalerank<=1] { text-size: 20; }
     [scalerank>=2][scalerank<=3] { text-size: 19; }
@@ -361,7 +363,7 @@
     [scalerank>=6] { text-size: 17; }
   }
   [zoom=13] {
-    text-size: 18;
+    text-size: 19;
     text-wrap-width: 200;
     [scalerank>=0][scalerank<=1] { text-size: 20; }
     [scalerank>=2][scalerank<=3] { text-size: 19; }
@@ -370,7 +372,7 @@
   }
   [zoom=14] {
     text-fill: lighten(@city_text,10);
-    text-size: 19;
+    text-size: 20;
     text-wrap-width: 300;
     [scalerank>=0][scalerank<=1] { text-size: 20; }
     [scalerank>=2][scalerank<=3] { text-size: 20; }
@@ -387,30 +389,32 @@
     [scalerank>=6] { text-size: 19; }
   }
 }
+*/
 
 // Towns _______________________________________________________________
 
-#place_label[type='town'][zoom>=8][zoom<=17] {
+/*#place_label[type='town'][zoom>=8][zoom<=17] {
   text-name: @name;
   /*text-face-name: @sans_lt;*/
-  text-face-name: @riddiford;
+  /*text-face-name: @riddiford;
   text-placement: point;
-  text-fill: @town_text;
+  //text-fill: @town_text;
+  text-fill: purple;
   text-halo-fill: @town_halo;
   text-halo-radius: 2;
   text-halo-rasterizer: fast;
   text-wrap-width: 60;
   text-wrap-before: true;
-  text-line-spacing: -4;
+  text-line-spacing: -1;
   text-min-distance: 15;
   [zoom>=13] { text-min-distance: 4; }
-  text-size: 12;
-  [zoom>=11] { text-size: 14; text-min-distance: 18; }
-  [zoom>=12] { text-size: 15; text-wrap-width: 80; }
-  [zoom>=13] { text-size: 16; text-wrap-width: 120; }
-  [zoom>=14] { text-size: 18; text-wrap-width: 160; text-halo-radius: 3; }
-  [zoom>=15] { text-size: 20; text-wrap-width: 200; }
-  [zoom>=16] { text-size: 22; text-wrap-width: 240; }
+  text-size: 13;
+  [zoom>=11] { text-size: 15; text-min-distance: 18; }
+  [zoom>=12] { text-size: 16; text-wrap-width: 80; }
+  [zoom>=13] { text-size: 17; text-wrap-width: 120; }
+  [zoom>=14] { text-size: 19; text-wrap-width: 160; text-halo-radius: 3; }
+  [zoom>=15] { text-size: 21; text-wrap-width: 200; }
+  [zoom>=16] { text-size: 23; text-wrap-width: 240; }*/
 }
 
 // Villages ____________________________________________________________
@@ -418,9 +422,10 @@
 #place_label[type='village'][zoom>=10][zoom<=17] {
   text-name: @name;
   /*text-face-name: @sans;*/
-  text-face-name: @riddiford;
+ /*text-face-name: @riddiford;
   text-placement: point;
-  text-fill: @town_text;
+  text-fill: purple;
+  //text-fill: @town_text;
   text-size: 11;
   text-halo-fill: @town_halo;
   text-halo-radius: 2;
@@ -429,12 +434,12 @@
   text-wrap-before: true;
   text-min-distance: 40;
   text-line-spacing: -4;
-  [zoom>=12] { text-size: 12; }
+  [zoom>=12] { text-size: 13; }
   [zoom>=13] { text-wrap-width: 80; }
-  [zoom>=14] { text-size: 14; text-wrap-width: 100; }
-  [zoom>=15] { text-size: 16; text-wrap-width: 120; }
-  [zoom>=16] { text-size: 18; text-wrap-width: 160; }
-  [zoom=17] { text-size: 20; text-wrap-width: 200; }
+  [zoom>=14] { text-size: 15; text-wrap-width: 100; }
+  [zoom>=15] { text-size: 17; text-wrap-width: 120; }
+  [zoom>=16] { text-size: 19; text-wrap-width: 160; }
+  [zoom=17] { text-size: 21; text-wrap-width: 200; }
 }
 
 // Suburbs _____________________________________________________________
@@ -442,7 +447,7 @@
 #place_label[type='suburb'][zoom>=12][zoom<=17] {
   text-name: @name;
   /*text-face-name: @sans_lt;*/
-  text-face-name: @riddiford;
+  /*text-face-name: @riddiford;
   text-placement: point;
   text-fill: @other_text;
   text-size: 11;
@@ -468,7 +473,7 @@
   [type='neighbourhood'] {
     text-name: @name;
     /*text-face-name: @sans_lt;*/
-    text-face-name: @riddiford;
+    /*text-face-name: @riddiford;
     text-placement: point;
     text-fill: @other_text;
     text-size: 11;
@@ -647,17 +652,4 @@
   [type='piste'][zoom>=15] { text-fill: lighten(#558,10); }
   [type='piste'][zoom>=18] { text-fill: #558; }
 }
-
-
-// =====================================================================
-// HOUSE NUMBERS
-// =====================================================================
-
-#housenum_label[zoom>=18] {
-  text-name: [house_num];
-  text-face-name: @sans_italic;
-  text-fill: @land * 0.8;
-  text-size: 9;
-}
-
-/**/
+*/
