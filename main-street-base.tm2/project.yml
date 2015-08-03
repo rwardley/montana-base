@@ -1,0 +1,75 @@
+_prefs: 
+  baselayer: ''
+  mapid: jelder.bb36fd3d
+  print: true
+  saveCenter: false
+_properties: {}
+attribution: "<a href='https://www.mapbox.com/about/maps/' target='_blank'>&copy; Mapbox &copy; OpenStreetMap</a> <a class='mapbox-improve-map' href='https://www.mapbox.com/map-feedback/' target='_blank'>Improve this map</a>"
+bounds: 
+  - -180
+  - -85.0511
+  - 180
+  - 85.0511
+center: 
+  - -111.6705
+  - 46.9353
+  - 8
+description: ''
+format: "png8:m=h:c=128"
+interactivity_layer: ''
+layers: 
+  - landcover
+  - landuse
+  - contour.line
+  - hillshade
+  - waterway
+  - water
+  - aeroway
+  - barrier_line
+  - building
+  - landuse_overlay
+  - admin
+  - BigSky
+  - BuffaloRoam
+  - Flathead
+  - LittleBighorn
+  - MainStreet
+  - SmallGhostTowns
+  - SpineOfRockies
+  - Yellowstone
+  - tunnel
+  - road
+  - bridge
+  - motorway
+  - TrunkPrimary
+  - MotorwayAll
+  - Primary_All
+  - Secondary_All
+  - Trunk_All
+  - Bighorn_POI
+  - Flathead_POI
+  - Small_Towns_POI
+  - Main_Street_POI
+  - country_label_line
+  - country_label
+  - marine_label
+  - state_label
+  - place_label
+  - water_label
+  - poi_label
+  - road_label
+  - waterway_label
+  - housenum_label
+  - contour.label
+maxzoom: 11
+minzoom: 8
+name: Main Street Base
+source: "mapbox:///jelder.52c5850d,jelder.2e047933,jelder.323f6bf9,jelder.f1af8257,jelder.715b6f3c,jelder.8931a9ae,mapbox.mapbox-terrain-v2,mapbox.mapbox-streets-v5"
+styles: 
+  - base.mss
+  - roads.mss
+  - label.mss
+  - points.mss
+  - roads2.mss
+  - label2.mss
+template: ''
