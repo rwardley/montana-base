@@ -198,3 +198,18 @@ Map {
     [zoom>=12] { line-width: 3; }
   }
 }
+#States {
+  //line-color: #5f875f;
+  //line-width: 2.5;
+  polygon-fill: #fff;
+  //polygon-fill: #5f875f;
+  polygon-opacity: 0.3;
+  //polygon-comp-op: multiply;
+  }
+
+#Montana {
+  line-color: #5f875f;
+  line-width: 2.5;
+  //polygon-fill: #5f875f;
+  //polygon-opacity: 0.22;
+  }

@@ -8,9 +8,9 @@
   <Parameter name="center">-111.9891,46.3583,6</Parameter>
   <Parameter name="format">png8:m=h:c=128</Parameter>
   <Parameter name="maxzoom">11</Parameter>
-  <Parameter name="minzoom">4</Parameter>
+  <Parameter name="minzoom">6</Parameter>
   <Parameter name="name"><![CDATA[Montana Terrain]]></Parameter>
-  <Parameter name="source"><![CDATA[mapbox:///jelder.52c5850d,jelder.2e047933,jelder.323f6bf9,jelder.f1af8257,jelder.715b6f3c,jelder.8931a9ae,mapbox.mapbox-terrain-v2,mapbox.mapbox-streets-v5]]></Parameter>
+  <Parameter name="source"><![CDATA[mapbox:///jelder.52c5850d,jelder.2e047933,jelder.323f6bf9,jelder.f1af8257,jelder.715b6f3c,jelder.8931a9ae,jelder.868eee1a,jelder.fe667ea1,mapbox.mapbox-terrain-v2,mapbox.mapbox-streets-v5]]></Parameter>
 </Parameters>
 
 <FontSet name="fontset-0">
@@ -534,6 +534,15 @@
   srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
       </Layer>
 
+<Style name="Montana" filter-mode="first">
+  <Rule>
+    <LineSymbolizer stroke="#5f875f" stroke-width="2.5" />
+  </Rule>
+</Style>
+<Layer name="Montana"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+    <StyleName>Montana</StyleName>  </Layer>
+
 <Style name="admin" filter-mode="first">
   <Rule>
     <MaxScaleDenominator>200000</MaxScaleDenominator>
@@ -775,6 +784,50 @@
   srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
     <StyleName>admin</StyleName>  </Layer>
 
+<Layer name="TrunkPrimary"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+      </Layer>
+
+<Style name="MotorwayAll" filter-mode="first">
+  <Rule>
+    <LineSymbolizer stroke="#d9aca3" stroke-width="1.5" />
+  </Rule>
+</Style>
+<Layer name="MotorwayAll"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+    <StyleName>MotorwayAll</StyleName>  </Layer>
+
+<Style name="Primary_All" filter-mode="first">
+  <Rule>
+    <LineSymbolizer stroke="#e8b0b0" stroke-width="0.75" />
+  </Rule>
+</Style>
+<Layer name="Primary_All"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+    <StyleName>Primary_All</StyleName>  </Layer>
+
+<Layer name="Secondary_All"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+      </Layer>
+
+<Style name="Trunk_All" filter-mode="first">
+  <Rule>
+    <LineSymbolizer stroke="#e8b0b0" stroke-width="0.75" />
+  </Rule>
+</Style>
+<Layer name="Trunk_All"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+    <StyleName>Trunk_All</StyleName>  </Layer>
+
+<Style name="States" filter-mode="first">
+  <Rule>
+    <PolygonSymbolizer fill="#ffffff" fill-opacity="0.3" />
+  </Rule>
+</Style>
+<Layer name="States"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+    <StyleName>States</StyleName>  </Layer>
+
 <Style name="BigSky" filter-mode="first">
   <Rule>
     <MaxScaleDenominator>3000000</MaxScaleDenominator>
@@ -803,12 +856,12 @@
   <Rule>
     <MaxScaleDenominator>6500000</MaxScaleDenominator>
     <MinScaleDenominator>3000000</MinScaleDenominator>
-    <LineSymbolizer stroke-width="2.5" stroke="#1832bb" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="4" stroke="#1832bb" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500000</MaxScaleDenominator>
     <MinScaleDenominator>6500000</MinScaleDenominator>
-    <LineSymbolizer stroke-width="2" stroke="#1832bb" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="3.5" stroke="#1832bb" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MinScaleDenominator>12500000</MinScaleDenominator>
@@ -848,12 +901,12 @@
   <Rule>
     <MaxScaleDenominator>6500000</MaxScaleDenominator>
     <MinScaleDenominator>3000000</MinScaleDenominator>
-    <LineSymbolizer stroke-width="2.5" stroke="#1832bb" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="4" stroke="#1832bb" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500000</MaxScaleDenominator>
     <MinScaleDenominator>6500000</MinScaleDenominator>
-    <LineSymbolizer stroke-width="2" stroke="#1832bb" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="3.5" stroke="#1832bb" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MinScaleDenominator>12500000</MinScaleDenominator>
@@ -893,12 +946,12 @@
   <Rule>
     <MaxScaleDenominator>6500000</MaxScaleDenominator>
     <MinScaleDenominator>3000000</MinScaleDenominator>
-    <LineSymbolizer stroke-width="2.5" stroke="#1832bb" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="4" stroke="#1832bb" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500000</MaxScaleDenominator>
     <MinScaleDenominator>6500000</MinScaleDenominator>
-    <LineSymbolizer stroke-width="2" stroke="#1832bb" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="3.5" stroke="#1832bb" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MinScaleDenominator>12500000</MinScaleDenominator>
@@ -938,12 +991,12 @@
   <Rule>
     <MaxScaleDenominator>6500000</MaxScaleDenominator>
     <MinScaleDenominator>3000000</MinScaleDenominator>
-    <LineSymbolizer stroke-width="2.5" stroke="#1832bb" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="4" stroke="#1832bb" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500000</MaxScaleDenominator>
     <MinScaleDenominator>6500000</MinScaleDenominator>
-    <LineSymbolizer stroke-width="2" stroke="#1832bb" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="3.5" stroke="#1832bb" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MinScaleDenominator>12500000</MinScaleDenominator>
@@ -983,12 +1036,12 @@
   <Rule>
     <MaxScaleDenominator>6500000</MaxScaleDenominator>
     <MinScaleDenominator>3000000</MinScaleDenominator>
-    <LineSymbolizer stroke-width="2.5" stroke="#1832bb" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="4" stroke="#1832bb" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500000</MaxScaleDenominator>
     <MinScaleDenominator>6500000</MinScaleDenominator>
-    <LineSymbolizer stroke-width="2" stroke="#1832bb" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="3.5" stroke="#1832bb" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MinScaleDenominator>12500000</MinScaleDenominator>
@@ -1028,12 +1081,12 @@
   <Rule>
     <MaxScaleDenominator>6500000</MaxScaleDenominator>
     <MinScaleDenominator>3000000</MinScaleDenominator>
-    <LineSymbolizer stroke-width="2.5" stroke="#1832bb" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="4" stroke="#1832bb" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500000</MaxScaleDenominator>
     <MinScaleDenominator>6500000</MinScaleDenominator>
-    <LineSymbolizer stroke-width="2" stroke="#1832bb" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="3.5" stroke="#1832bb" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MinScaleDenominator>12500000</MinScaleDenominator>
@@ -1073,12 +1126,12 @@
   <Rule>
     <MaxScaleDenominator>6500000</MaxScaleDenominator>
     <MinScaleDenominator>3000000</MinScaleDenominator>
-    <LineSymbolizer stroke-width="2.5" stroke="#1832bb" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="4" stroke="#1832bb" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500000</MaxScaleDenominator>
     <MinScaleDenominator>6500000</MinScaleDenominator>
-    <LineSymbolizer stroke-width="2" stroke="#1832bb" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="3.5" stroke="#1832bb" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MinScaleDenominator>12500000</MinScaleDenominator>
@@ -1118,12 +1171,12 @@
   <Rule>
     <MaxScaleDenominator>6500000</MaxScaleDenominator>
     <MinScaleDenominator>3000000</MinScaleDenominator>
-    <LineSymbolizer stroke-width="2.5" stroke="#1832bb" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="4" stroke="#1832bb" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500000</MaxScaleDenominator>
     <MinScaleDenominator>6500000</MinScaleDenominator>
-    <LineSymbolizer stroke-width="2" stroke="#1832bb" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="3.5" stroke="#1832bb" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MinScaleDenominator>12500000</MinScaleDenominator>
@@ -1150,46 +1203,6 @@
 <Layer name="motorway"
   srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
       </Layer>
-
-<Layer name="TrunkPrimary"
-  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
-      </Layer>
-
-<Style name="MotorwayAll" filter-mode="first">
-  <Rule>
-    <LineSymbolizer stroke="#d9aca3" stroke-width="1.5" />
-  </Rule>
-</Style>
-<Layer name="MotorwayAll"
-  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
-    <StyleName>MotorwayAll</StyleName>  </Layer>
-
-<Style name="Primary_All" filter-mode="first">
-  <Rule>
-    <LineSymbolizer stroke="#e8b0b0" stroke-width="0.75" />
-  </Rule>
-</Style>
-<Layer name="Primary_All"
-  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
-    <StyleName>Primary_All</StyleName>  </Layer>
-
-<Style name="Secondary_All" filter-mode="first">
-  <Rule>
-    <LineSymbolizer stroke="#e8b0b0" stroke-width="0.75" />
-  </Rule>
-</Style>
-<Layer name="Secondary_All"
-  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
-    <StyleName>Secondary_All</StyleName>  </Layer>
-
-<Style name="Trunk_All" filter-mode="first">
-  <Rule>
-    <LineSymbolizer stroke="#e8b0b0" stroke-width="0.75" />
-  </Rule>
-</Style>
-<Layer name="Trunk_All"
-  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
-    <StyleName>Trunk_All</StyleName>  </Layer>
 
 <Layer name="Bighorn_POI"
   srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
@@ -1895,93 +1908,93 @@
     <MaxScaleDenominator>1500000</MaxScaleDenominator>
     <MinScaleDenominator>400000</MinScaleDenominator>
     <Filter>([area] &gt; 100000)</Filter>
-    <TextSymbolizer size="18" character-spacing="2" halo-radius="2" wrap-width="100" face-name="NatGeo Darley Regular" placement="point" fill="#666666" halo-fill="rgba(228, 221, 211, 0.19999999999999996)" halo-rasterizer="fast" minimum-distance="1" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="18" character-spacing="2" halo-radius="2" wrap-width="100" face-name="NatGeo Darley Regular" placement="point" fill="#666666" halo-fill="rgba(228, 221, 211, 0.19999999999999996)" halo-rasterizer="fast" minimum-distance="1" text-transform="uppercase" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>6500000</MaxScaleDenominator>
     <MinScaleDenominator>1500000</MinScaleDenominator>
     <Filter>([area] &gt; 100000)</Filter>
-    <TextSymbolizer size="18" character-spacing="3" wrap-width="60" face-name="NatGeo Darley Regular" placement="point" fill="#666666" halo-fill="rgba(228, 221, 211, 0.19999999999999996)" halo-radius="2" halo-rasterizer="fast" minimum-distance="1" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="18" character-spacing="3" wrap-width="60" face-name="NatGeo Darley Regular" placement="point" fill="#666666" halo-fill="rgba(228, 221, 211, 0.19999999999999996)" halo-radius="2" halo-rasterizer="fast" minimum-distance="1" text-transform="uppercase" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000000</MaxScaleDenominator>
     <MinScaleDenominator>6500000</MinScaleDenominator>
     <Filter>([area] &gt; 100000)</Filter>
-    <TextSymbolizer size="14" wrap-width="40" face-name="NatGeo Darley Regular" placement="point" fill="#666666" halo-fill="rgba(228, 221, 211, 0.19999999999999996)" halo-radius="2" halo-rasterizer="fast" minimum-distance="1" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="14" wrap-width="40" face-name="NatGeo Darley Regular" placement="point" fill="#666666" halo-fill="rgba(228, 221, 211, 0.19999999999999996)" halo-radius="2" halo-rasterizer="fast" minimum-distance="1" text-transform="uppercase" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000000</MaxScaleDenominator>
     <MinScaleDenominator>25000000</MinScaleDenominator>
     <Filter>([area] &gt; 100000)</Filter>
-    <TextSymbolizer face-name="NatGeo Darley Regular" placement="point" fill="#666666" halo-fill="rgba(228, 221, 211, 0.19999999999999996)" halo-radius="2" halo-rasterizer="fast" minimum-distance="1" size="10" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer face-name="NatGeo Darley Regular" placement="point" fill="#666666" halo-fill="rgba(228, 221, 211, 0.19999999999999996)" halo-radius="2" halo-rasterizer="fast" minimum-distance="1" size="10" text-transform="uppercase" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>1500000</MaxScaleDenominator>
     <MinScaleDenominator>400000</MinScaleDenominator>
     <Filter>([area] &gt; 50000)</Filter>
-    <TextSymbolizer size="18" character-spacing="2" halo-radius="2" wrap-width="100" face-name="NatGeo Darley Regular" placement="point" fill="#666666" halo-fill="rgba(228, 221, 211, 0.19999999999999996)" halo-rasterizer="fast" minimum-distance="1" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="18" character-spacing="2" halo-radius="2" wrap-width="100" face-name="NatGeo Darley Regular" placement="point" fill="#666666" halo-fill="rgba(228, 221, 211, 0.19999999999999996)" halo-rasterizer="fast" minimum-distance="1" text-transform="uppercase" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>6500000</MaxScaleDenominator>
     <MinScaleDenominator>1500000</MinScaleDenominator>
     <Filter>([area] &gt; 50000)</Filter>
-    <TextSymbolizer size="16" character-spacing="1" wrap-width="60" face-name="NatGeo Darley Regular" placement="point" fill="#666666" halo-fill="rgba(228, 221, 211, 0.19999999999999996)" halo-radius="2" halo-rasterizer="fast" minimum-distance="1" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="16" character-spacing="1" wrap-width="60" face-name="NatGeo Darley Regular" placement="point" fill="#666666" halo-fill="rgba(228, 221, 211, 0.19999999999999996)" halo-radius="2" halo-rasterizer="fast" minimum-distance="1" text-transform="uppercase" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000000</MaxScaleDenominator>
     <MinScaleDenominator>6500000</MinScaleDenominator>
     <Filter>([area] &gt; 50000)</Filter>
-    <TextSymbolizer size="14" wrap-width="40" face-name="NatGeo Darley Regular" placement="point" fill="#666666" halo-fill="rgba(228, 221, 211, 0.19999999999999996)" halo-radius="2" halo-rasterizer="fast" minimum-distance="1" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="14" wrap-width="40" face-name="NatGeo Darley Regular" placement="point" fill="#666666" halo-fill="rgba(228, 221, 211, 0.19999999999999996)" halo-radius="2" halo-rasterizer="fast" minimum-distance="1" text-transform="uppercase" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000000</MaxScaleDenominator>
     <MinScaleDenominator>25000000</MinScaleDenominator>
     <Filter>([area] &gt; 50000)</Filter>
-    <TextSymbolizer face-name="NatGeo Darley Regular" placement="point" fill="#666666" halo-fill="rgba(228, 221, 211, 0.19999999999999996)" halo-radius="2" halo-rasterizer="fast" minimum-distance="1" size="10" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer face-name="NatGeo Darley Regular" placement="point" fill="#666666" halo-fill="rgba(228, 221, 211, 0.19999999999999996)" halo-radius="2" halo-rasterizer="fast" minimum-distance="1" size="10" text-transform="uppercase" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000000</MaxScaleDenominator>
     <MinScaleDenominator>6500000</MinScaleDenominator>
     <Filter>([area] &gt; 10000)</Filter>
-    <TextSymbolizer size="12" wrap-width="40" face-name="NatGeo Darley Regular" placement="point" fill="#666666" halo-fill="rgba(228, 221, 211, 0.19999999999999996)" halo-radius="2" halo-rasterizer="fast" minimum-distance="1" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="12" wrap-width="40" face-name="NatGeo Darley Regular" placement="point" fill="#666666" halo-fill="rgba(228, 221, 211, 0.19999999999999996)" halo-radius="2" halo-rasterizer="fast" minimum-distance="1" text-transform="uppercase" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>1500000</MaxScaleDenominator>
     <MinScaleDenominator>400000</MinScaleDenominator>
     <Filter>([area] &gt; 10000)</Filter>
-    <TextSymbolizer halo-radius="2" size="16" character-spacing="2" wrap-width="100" face-name="NatGeo Darley Regular" placement="point" fill="#666666" halo-fill="rgba(228, 221, 211, 0.19999999999999996)" halo-rasterizer="fast" minimum-distance="1" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer halo-radius="2" size="16" character-spacing="2" wrap-width="100" face-name="NatGeo Darley Regular" placement="point" fill="#666666" halo-fill="rgba(228, 221, 211, 0.19999999999999996)" halo-rasterizer="fast" minimum-distance="1" text-transform="uppercase" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>6500000</MaxScaleDenominator>
     <MinScaleDenominator>1500000</MinScaleDenominator>
     <Filter>([area] &gt; 10000)</Filter>
-    <TextSymbolizer size="14" wrap-width="60" face-name="NatGeo Darley Regular" placement="point" fill="#666666" halo-fill="rgba(228, 221, 211, 0.19999999999999996)" halo-radius="2" halo-rasterizer="fast" minimum-distance="1" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="14" wrap-width="60" face-name="NatGeo Darley Regular" placement="point" fill="#666666" halo-fill="rgba(228, 221, 211, 0.19999999999999996)" halo-radius="2" halo-rasterizer="fast" minimum-distance="1" text-transform="uppercase" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000000</MaxScaleDenominator>
     <MinScaleDenominator>25000000</MinScaleDenominator>
     <Filter>([area] &gt; 10000)</Filter>
-    <TextSymbolizer face-name="NatGeo Darley Regular" placement="point" fill="#666666" halo-fill="rgba(228, 221, 211, 0.19999999999999996)" halo-radius="2" halo-rasterizer="fast" minimum-distance="1" size="10" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer face-name="NatGeo Darley Regular" placement="point" fill="#666666" halo-fill="rgba(228, 221, 211, 0.19999999999999996)" halo-radius="2" halo-rasterizer="fast" minimum-distance="1" size="10" text-transform="uppercase" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>1500000</MaxScaleDenominator>
     <MinScaleDenominator>400000</MinScaleDenominator>
-    <TextSymbolizer halo-radius="2" size="16" character-spacing="2" wrap-width="100" face-name="NatGeo Darley Regular" placement="point" fill="#666666" halo-fill="rgba(228, 221, 211, 0.19999999999999996)" halo-rasterizer="fast" minimum-distance="1" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer halo-radius="2" size="16" character-spacing="2" wrap-width="100" face-name="NatGeo Darley Regular" placement="point" fill="#666666" halo-fill="rgba(228, 221, 211, 0.19999999999999996)" halo-rasterizer="fast" minimum-distance="1" text-transform="uppercase" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>6500000</MaxScaleDenominator>
     <MinScaleDenominator>1500000</MinScaleDenominator>
-    <TextSymbolizer size="14" wrap-width="60" face-name="NatGeo Darley Regular" placement="point" fill="#666666" halo-fill="rgba(228, 221, 211, 0.19999999999999996)" halo-radius="2" halo-rasterizer="fast" minimum-distance="1" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="14" wrap-width="60" face-name="NatGeo Darley Regular" placement="point" fill="#666666" halo-fill="rgba(228, 221, 211, 0.19999999999999996)" halo-radius="2" halo-rasterizer="fast" minimum-distance="1" text-transform="uppercase" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000000</MaxScaleDenominator>
     <MinScaleDenominator>6500000</MinScaleDenominator>
-    <TextSymbolizer wrap-width="40" face-name="NatGeo Darley Regular" placement="point" fill="#666666" halo-fill="rgba(228, 221, 211, 0.19999999999999996)" halo-radius="2" halo-rasterizer="fast" minimum-distance="1" size="10" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer wrap-width="40" face-name="NatGeo Darley Regular" placement="point" fill="#666666" halo-fill="rgba(228, 221, 211, 0.19999999999999996)" halo-radius="2" halo-rasterizer="fast" minimum-distance="1" size="10" text-transform="uppercase" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000000</MaxScaleDenominator>
     <MinScaleDenominator>25000000</MinScaleDenominator>
-    <TextSymbolizer face-name="NatGeo Darley Regular" placement="point" fill="#666666" halo-fill="rgba(228, 221, 211, 0.19999999999999996)" halo-radius="2" halo-rasterizer="fast" minimum-distance="1" size="10" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer face-name="NatGeo Darley Regular" placement="point" fill="#666666" halo-fill="rgba(228, 221, 211, 0.19999999999999996)" halo-radius="2" halo-rasterizer="fast" minimum-distance="1" size="10" text-transform="uppercase" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
 </Style>
 <Layer name="state_label"

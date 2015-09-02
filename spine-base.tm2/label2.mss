@@ -236,6 +236,7 @@
   text-halo-rasterizer: fast;
   text-min-distance: 1;
   text-size: 10;
+  text-transform: uppercase;
   [zoom>=5][zoom<=6] {
     [area>10000] { text-size: 12; }
     [area>50000] { text-size: 14; }

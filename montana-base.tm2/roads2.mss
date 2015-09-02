@@ -23,8 +23,8 @@
 #BuffaloRoam {
   ::fill {line-color: @route;
   line-cap: round;
-  [zoom = 6] { line-width: 2.0; }
-  [zoom = 7] { line-width: 2.5; }
+  [zoom = 6] { line-width: 3.5; }
+  [zoom = 7] { line-width: 4; }
   [zoom = 8] { line-width: 4; }
   [zoom >= 9] { line-width: 5; }
     }
@@ -48,6 +48,7 @@
 #MotorwayAll {
   line-color: @motorway2;
   line-width: 1.5;
+  //line-width: 3;
   }
 
 #Yellowstone,
@@ -65,7 +66,7 @@
   }
 
 #Primary_All,
-#Secondary_All,
+//#Secondary_All,
 #Trunk_All {
   line-color: @motorway;
   line-width: 0.75;

@@ -1713,93 +1713,93 @@
     <MaxScaleDenominator>1500000</MaxScaleDenominator>
     <MinScaleDenominator>400000</MinScaleDenominator>
     <Filter>([area] &gt; 100000)</Filter>
-    <TextSymbolizer size="18" character-spacing="2" halo-radius="2" wrap-width="100" face-name="NatGeo Darley Regular" placement="point" fill="#666666" halo-fill="rgba(228, 221, 211, 0.19999999999999996)" halo-rasterizer="fast" minimum-distance="1" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="18" character-spacing="2" halo-radius="2" wrap-width="100" face-name="NatGeo Darley Regular" placement="point" fill="#666666" halo-fill="rgba(228, 221, 211, 0.19999999999999996)" halo-rasterizer="fast" minimum-distance="1" text-transform="uppercase" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>6500000</MaxScaleDenominator>
     <MinScaleDenominator>1500000</MinScaleDenominator>
     <Filter>([area] &gt; 100000)</Filter>
-    <TextSymbolizer size="18" character-spacing="3" wrap-width="60" face-name="NatGeo Darley Regular" placement="point" fill="#666666" halo-fill="rgba(228, 221, 211, 0.19999999999999996)" halo-radius="2" halo-rasterizer="fast" minimum-distance="1" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="18" character-spacing="3" wrap-width="60" face-name="NatGeo Darley Regular" placement="point" fill="#666666" halo-fill="rgba(228, 221, 211, 0.19999999999999996)" halo-radius="2" halo-rasterizer="fast" minimum-distance="1" text-transform="uppercase" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000000</MaxScaleDenominator>
     <MinScaleDenominator>6500000</MinScaleDenominator>
     <Filter>([area] &gt; 100000)</Filter>
-    <TextSymbolizer size="14" wrap-width="40" face-name="NatGeo Darley Regular" placement="point" fill="#666666" halo-fill="rgba(228, 221, 211, 0.19999999999999996)" halo-radius="2" halo-rasterizer="fast" minimum-distance="1" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="14" wrap-width="40" face-name="NatGeo Darley Regular" placement="point" fill="#666666" halo-fill="rgba(228, 221, 211, 0.19999999999999996)" halo-radius="2" halo-rasterizer="fast" minimum-distance="1" text-transform="uppercase" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000000</MaxScaleDenominator>
     <MinScaleDenominator>25000000</MinScaleDenominator>
     <Filter>([area] &gt; 100000)</Filter>
-    <TextSymbolizer face-name="NatGeo Darley Regular" placement="point" fill="#666666" halo-fill="rgba(228, 221, 211, 0.19999999999999996)" halo-radius="2" halo-rasterizer="fast" minimum-distance="1" size="10" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer face-name="NatGeo Darley Regular" placement="point" fill="#666666" halo-fill="rgba(228, 221, 211, 0.19999999999999996)" halo-radius="2" halo-rasterizer="fast" minimum-distance="1" size="10" text-transform="uppercase" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>1500000</MaxScaleDenominator>
     <MinScaleDenominator>400000</MinScaleDenominator>
     <Filter>([area] &gt; 50000)</Filter>
-    <TextSymbolizer size="18" character-spacing="2" halo-radius="2" wrap-width="100" face-name="NatGeo Darley Regular" placement="point" fill="#666666" halo-fill="rgba(228, 221, 211, 0.19999999999999996)" halo-rasterizer="fast" minimum-distance="1" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="18" character-spacing="2" halo-radius="2" wrap-width="100" face-name="NatGeo Darley Regular" placement="point" fill="#666666" halo-fill="rgba(228, 221, 211, 0.19999999999999996)" halo-rasterizer="fast" minimum-distance="1" text-transform="uppercase" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>6500000</MaxScaleDenominator>
     <MinScaleDenominator>1500000</MinScaleDenominator>
     <Filter>([area] &gt; 50000)</Filter>
-    <TextSymbolizer size="16" character-spacing="1" wrap-width="60" face-name="NatGeo Darley Regular" placement="point" fill="#666666" halo-fill="rgba(228, 221, 211, 0.19999999999999996)" halo-radius="2" halo-rasterizer="fast" minimum-distance="1" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="16" character-spacing="1" wrap-width="60" face-name="NatGeo Darley Regular" placement="point" fill="#666666" halo-fill="rgba(228, 221, 211, 0.19999999999999996)" halo-radius="2" halo-rasterizer="fast" minimum-distance="1" text-transform="uppercase" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000000</MaxScaleDenominator>
     <MinScaleDenominator>6500000</MinScaleDenominator>
     <Filter>([area] &gt; 50000)</Filter>
-    <TextSymbolizer size="14" wrap-width="40" face-name="NatGeo Darley Regular" placement="point" fill="#666666" halo-fill="rgba(228, 221, 211, 0.19999999999999996)" halo-radius="2" halo-rasterizer="fast" minimum-distance="1" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="14" wrap-width="40" face-name="NatGeo Darley Regular" placement="point" fill="#666666" halo-fill="rgba(228, 221, 211, 0.19999999999999996)" halo-radius="2" halo-rasterizer="fast" minimum-distance="1" text-transform="uppercase" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000000</MaxScaleDenominator>
     <MinScaleDenominator>25000000</MinScaleDenominator>
     <Filter>([area] &gt; 50000)</Filter>
-    <TextSymbolizer face-name="NatGeo Darley Regular" placement="point" fill="#666666" halo-fill="rgba(228, 221, 211, 0.19999999999999996)" halo-radius="2" halo-rasterizer="fast" minimum-distance="1" size="10" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer face-name="NatGeo Darley Regular" placement="point" fill="#666666" halo-fill="rgba(228, 221, 211, 0.19999999999999996)" halo-radius="2" halo-rasterizer="fast" minimum-distance="1" size="10" text-transform="uppercase" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000000</MaxScaleDenominator>
     <MinScaleDenominator>6500000</MinScaleDenominator>
     <Filter>([area] &gt; 10000)</Filter>
-    <TextSymbolizer size="12" wrap-width="40" face-name="NatGeo Darley Regular" placement="point" fill="#666666" halo-fill="rgba(228, 221, 211, 0.19999999999999996)" halo-radius="2" halo-rasterizer="fast" minimum-distance="1" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="12" wrap-width="40" face-name="NatGeo Darley Regular" placement="point" fill="#666666" halo-fill="rgba(228, 221, 211, 0.19999999999999996)" halo-radius="2" halo-rasterizer="fast" minimum-distance="1" text-transform="uppercase" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>1500000</MaxScaleDenominator>
     <MinScaleDenominator>400000</MinScaleDenominator>
     <Filter>([area] &gt; 10000)</Filter>
-    <TextSymbolizer halo-radius="2" size="16" character-spacing="2" wrap-width="100" face-name="NatGeo Darley Regular" placement="point" fill="#666666" halo-fill="rgba(228, 221, 211, 0.19999999999999996)" halo-rasterizer="fast" minimum-distance="1" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer halo-radius="2" size="16" character-spacing="2" wrap-width="100" face-name="NatGeo Darley Regular" placement="point" fill="#666666" halo-fill="rgba(228, 221, 211, 0.19999999999999996)" halo-rasterizer="fast" minimum-distance="1" text-transform="uppercase" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>6500000</MaxScaleDenominator>
     <MinScaleDenominator>1500000</MinScaleDenominator>
     <Filter>([area] &gt; 10000)</Filter>
-    <TextSymbolizer size="14" wrap-width="60" face-name="NatGeo Darley Regular" placement="point" fill="#666666" halo-fill="rgba(228, 221, 211, 0.19999999999999996)" halo-radius="2" halo-rasterizer="fast" minimum-distance="1" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="14" wrap-width="60" face-name="NatGeo Darley Regular" placement="point" fill="#666666" halo-fill="rgba(228, 221, 211, 0.19999999999999996)" halo-radius="2" halo-rasterizer="fast" minimum-distance="1" text-transform="uppercase" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000000</MaxScaleDenominator>
     <MinScaleDenominator>25000000</MinScaleDenominator>
     <Filter>([area] &gt; 10000)</Filter>
-    <TextSymbolizer face-name="NatGeo Darley Regular" placement="point" fill="#666666" halo-fill="rgba(228, 221, 211, 0.19999999999999996)" halo-radius="2" halo-rasterizer="fast" minimum-distance="1" size="10" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer face-name="NatGeo Darley Regular" placement="point" fill="#666666" halo-fill="rgba(228, 221, 211, 0.19999999999999996)" halo-radius="2" halo-rasterizer="fast" minimum-distance="1" size="10" text-transform="uppercase" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>1500000</MaxScaleDenominator>
     <MinScaleDenominator>400000</MinScaleDenominator>
-    <TextSymbolizer halo-radius="2" size="16" character-spacing="2" wrap-width="100" face-name="NatGeo Darley Regular" placement="point" fill="#666666" halo-fill="rgba(228, 221, 211, 0.19999999999999996)" halo-rasterizer="fast" minimum-distance="1" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer halo-radius="2" size="16" character-spacing="2" wrap-width="100" face-name="NatGeo Darley Regular" placement="point" fill="#666666" halo-fill="rgba(228, 221, 211, 0.19999999999999996)" halo-rasterizer="fast" minimum-distance="1" text-transform="uppercase" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>6500000</MaxScaleDenominator>
     <MinScaleDenominator>1500000</MinScaleDenominator>
-    <TextSymbolizer size="14" wrap-width="60" face-name="NatGeo Darley Regular" placement="point" fill="#666666" halo-fill="rgba(228, 221, 211, 0.19999999999999996)" halo-radius="2" halo-rasterizer="fast" minimum-distance="1" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="14" wrap-width="60" face-name="NatGeo Darley Regular" placement="point" fill="#666666" halo-fill="rgba(228, 221, 211, 0.19999999999999996)" halo-radius="2" halo-rasterizer="fast" minimum-distance="1" text-transform="uppercase" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000000</MaxScaleDenominator>
     <MinScaleDenominator>6500000</MinScaleDenominator>
-    <TextSymbolizer wrap-width="40" face-name="NatGeo Darley Regular" placement="point" fill="#666666" halo-fill="rgba(228, 221, 211, 0.19999999999999996)" halo-radius="2" halo-rasterizer="fast" minimum-distance="1" size="10" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer wrap-width="40" face-name="NatGeo Darley Regular" placement="point" fill="#666666" halo-fill="rgba(228, 221, 211, 0.19999999999999996)" halo-radius="2" halo-rasterizer="fast" minimum-distance="1" size="10" text-transform="uppercase" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000000</MaxScaleDenominator>
     <MinScaleDenominator>25000000</MinScaleDenominator>
-    <TextSymbolizer face-name="NatGeo Darley Regular" placement="point" fill="#666666" halo-fill="rgba(228, 221, 211, 0.19999999999999996)" halo-radius="2" halo-rasterizer="fast" minimum-distance="1" size="10" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer face-name="NatGeo Darley Regular" placement="point" fill="#666666" halo-fill="rgba(228, 221, 211, 0.19999999999999996)" halo-radius="2" halo-rasterizer="fast" minimum-distance="1" size="10" text-transform="uppercase" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
 </Style>
 <Layer name="state_label"
